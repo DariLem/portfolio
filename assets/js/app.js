@@ -426,6 +426,32 @@ document.getElementById('modalClose')?.addEventListener('click', closeModal);
 document.getElementById('modalOverlay')?.addEventListener('click', closeModal);
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
+/* ── Image Modal ── */
+function openImageModal(src) {
+  const modal = document.getElementById('imageModal');
+  const img = document.getElementById('modalImg');
+  img.src = src;
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeImageModal() {
+  const modal = document.getElementById('imageModal');
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('imageModalClose')?.addEventListener('click', closeImageModal);
+document.getElementById('imageModalOverlay')?.addEventListener('click', closeImageModal);
+
 /* ── Init ── */
 renderProjects('all');
 applyLang('ru');
+
+// Bind cert images
+document.querySelectorAll('.cert-card img').forEach(img => {
+  img.style.cursor = 'zoom-in';
+  img.addEventListener('click', () => openImageModal(img.src));
+});
