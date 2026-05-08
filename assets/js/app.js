@@ -191,36 +191,81 @@ function renderProjects(filter, isLoadMore = false) {
   const grid = document.getElementById('projectsGrid');
   const t = window.TRANSLATIONS[lang];
   const loadMoreBtnContainer = document.querySelector('.projects-more-container');
-
+  
   const mobileApps = window.PROJECTS.filter(p => p.role === 'Мобильное приложение');
-  const services = window.PROJECTS.filter(p => p.role === 'Внутренние процессы' || p.role === 'Личный ассистент' || p.role === 'Специалист по заявкам');
-  const employees = window.PROJECTS.filter(p => !mobileApps.includes(p) && !services.includes(p));
+  const allEmployees = window.PROJECTS.filter(p => p.role !== 'Мобильное приложение');
+  const services = []; 
 
+  // Determine which categories to show
+  let categoriesToShow = [];
   if (filter === 'all') {
-    const categories = [
-      { title: t['projects.category.mobile'], items: mobileApps, icon: '📱' },
-      { title: t['projects.category.employees'], items: employees, icon: '🤖' },
-      { title: t['projects.category.services'], items: services, icon: '⚡' }
+    categoriesToShow = [
+      { id: 'mobile', title: t['projects.category.mobile'], items: mobileApps, icon: '📱' },
+      { id: 'employee', title: t['projects.category.employees'], items: allEmployees, icon: '🤖' },
+      { id: 'service', title: t['projects.category.services'], items: services, icon: '⚡' }
     ];
+  } else if (filter === 'employee' || Object.values(roleMap).includes(filter) || filter.startsWith('role.') || allEmployees.some(p => p.role === filter)) {
+    categoriesToShow = [{ id: 'employee', title: t['projects.category.employees'], items: allEmployees, icon: '🤖' }];
+  } else if (filter === 'Мобильное приложение') {
+    categoriesToShow = [{ id: 'mobile', title: t['projects.category.mobile'], items: mobileApps, icon: '📱' }];
+  } else if (filter === 'service') {
+    categoriesToShow = [{ id: 'service', title: t['projects.category.services'], items: services, icon: '⚡' }];
+  }
 
-    grid.innerHTML = categories.map(cat => {
-      if (cat.items.length === 0) return '';
-      const visible = cat.items.slice(0, isLoadMore ? 100 : 3);
+  if (categoriesToShow.length > 0) {
+    grid.innerHTML = categoriesToShow.map(cat => {
+      if (cat.items.length === 0 && cat.id !== 'service') return ''; 
+      if (cat.id === 'service' && cat.items.length === 0) {
+         return `
+           <div class="project-group" id="group-${cat.id}" style="grid-column: 1 / -1; margin-bottom: 96px; width: 100%; opacity: 0.5;">
+             <div class="group-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px 24px; border-radius: 16px;">
+               <div style="display: flex; align-items: center; gap: 20px;">
+                 <span style="font-size: 2.25rem;">${cat.icon}</span>
+                 <h2 style="font-size: 1.75rem; font-weight: 700; color: #F1F5F9; margin: 0;">${cat.title}</h2>
+               </div>
+             </div>
+             <p style="text-align: center; color: #64748B; padding: 40px; border: 2px dashed rgba(255,255,255,0.05); border-radius: 16px;">В этом разделе пока нет проектов</p>
+           </div>
+         `;
+      }
+
+      let subFilterHtml = '';
+      let displayItems = cat.items;
+
+      if (cat.id === 'employee') {
+        const roles = [...new Set(allEmployees.map(p => p.role))];
+        subFilterHtml = `
+          <div class="sub-filters" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px;">
+            <button class="sub-filter-btn ${currentFilter === 'all' || currentFilter === 'employee' ? 'active' : ''}" data-role="all" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #94A3B8; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; cursor: pointer; transition: 0.3s;">Все</button>
+            ${roles.map(r => {
+              const isActive = currentFilter === r;
+              return `<button class="sub-filter-btn ${isActive ? 'active' : ''}" data-role="${r}" style="background: ${isActive ? 'rgba(59, 130, 246, 0.2)' : 'rgba(255,255,255,0.05)'}; border: 1px solid ${isActive ? '#3B82F6' : 'rgba(255,255,255,0.1)'}; color: ${isActive ? '#FFF' : '#94A3B8'}; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; cursor: pointer; transition: 0.3s;">${t[roleMap[r]] || r}</button>`;
+            }).join('')}
+          </div>
+        `;
+        
+        if (currentFilter !== 'all' && currentFilter !== 'employee' && cat.items.some(p => p.role === currentFilter)) {
+          displayItems = cat.items.filter(p => p.role === currentFilter);
+        }
+      }
+
+      const visible = displayItems.slice(0, isLoadMore ? 100 : (cat.id === 'employee' && filter !== 'all' ? 12 : 6));
       
       return `
-        <div class="project-group" style="grid-column: 1 / -1; margin-bottom: 96px; width: 100%;">
+        <div class="project-group" id="group-${cat.id}" style="grid-column: 1 / -1; margin-bottom: 96px; width: 100%;">
           <div class="group-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px 24px; border-radius: 16px; backdrop-filter: blur(10px);">
             <div style="display: flex; align-items: center; gap: 20px;">
               <span style="font-size: 2.25rem;">${cat.icon}</span>
               <div>
                 <h2 style="font-size: 1.75rem; font-weight: 700; color: #F1F5F9; margin: 0; line-height: 1.2;">${cat.title}</h2>
-                <p style="color: #64748B; font-size: 0.875rem; margin: 4px 0 0 0;">${cat.items.length} ${t['hero.stat1'] || 'кейсов'}</p>
+                <p style="color: #64748B; font-size: 0.875rem; margin: 4px 0 0 0;">${displayItems.length} ${t['hero.stat1'] || 'кейсов'}</p>
               </div>
             </div>
             <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(59, 130, 246, 0.1); display: flex; align-items: center; justify-content: center; color: #3B82F6;">
                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
             </div>
           </div>
+          ${subFilterHtml}
           <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 32px; width: 100%;">
             ${visible.map(p => renderProjectCard(p, t)).join('')}
           </div>
@@ -229,17 +274,26 @@ function renderProjects(filter, isLoadMore = false) {
     }).join('');
     
     loadMoreBtnContainer.style.display = isLoadMore ? 'none' : 'block';
-  } else {
-    let filtered = [];
-    if (filter === 'Мобильное приложение') filtered = mobileApps;
-    else if (filter === 'service') filtered = services;
-    else if (filter === 'employee') filtered = employees;
-    else filtered = window.PROJECTS.filter(p => p.role === filter || (p.role && p.role.includes(filter)));
-
-    const visible = filtered.slice(0, visibleProjectsCount);
-    grid.innerHTML = visible.map(p => renderProjectCard(p, t)).join('');
-    loadMoreBtnContainer.style.display = visibleProjectsCount >= filtered.length ? 'none' : 'block';
   }
+
+  // Bind sub-filter events
+  grid.querySelectorAll('.sub-filter-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const role = btn.dataset.role;
+      if (role === 'all') renderProjects('employee');
+      else renderProjects(role);
+      
+      // Fixed scrolling: only scroll if the header is not in view
+      const groupEl = document.getElementById('group-employee');
+      if (groupEl) {
+        const rect = groupEl.getBoundingClientRect();
+        if (rect.top < 0) {
+          window.scrollTo({ top: window.scrollY + rect.top - 100, behavior: 'smooth' });
+        }
+      }
+    });
+  });
 
   // Bind events
   grid.querySelectorAll('.project-card').forEach(card => {
