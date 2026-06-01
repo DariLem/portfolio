@@ -424,7 +424,7 @@ function closeModal() {
 
 document.getElementById('modalClose')?.addEventListener('click', closeModal);
 document.getElementById('modalOverlay')?.addEventListener('click', closeModal);
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); closeImageModal(); } });
 
 /* ── Image Modal ── */
 function openImageModal(src) {

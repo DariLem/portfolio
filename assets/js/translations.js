@@ -101,20 +101,23 @@ window.TRANSLATIONS = {
     "cert1.title": "ProTalk — Амбассадор",
     "cert1.desc": "Прошла обучение у разработчиков ProTalk по созданию нейро-сотрудников. Официальный амбассадор сервиса",
 
-    "cert2.title": "ProTalk — Преподаватель",
-    "cert2.desc": "Сертификат на право официально обучать работе в ProTalk",
+    "cert2.title": "Работа с ИИ",
+    "cert2.desc": "Курс Учебника Т—Ж по работе с ChatGPT и Midjourney — практические инструменты нейросетей",
 
-    "cert3.title": "Учебник Т—Ж",
-    "cert3.desc": "Курс по работе с нейросетями — базовые и продвинутые инструменты ИИ",
+    "cert3.title": "Работа с документами",
+    "cert3.desc": "Курс по Excel от Нетологии — полезные навыки работы с таблицами и данными",
 
-    "cert4.title": "Нетодология",
-    "cert4.desc": "Курс по Excel, базам знаний и интеграциям с Google-инструментами. Дополнительно: опыт с Google Apps Script",
+    "cert4.title": "Знания в рекламе",
+    "cert4.desc": "Сертификат PromoPult — таргетированная реклама в социальных сетях",
 
-    "cert5.title": "Реклама",
-    "cert5.desc": "Курс по настройке рекламы — понимание продвижения проектов с самого старта разработки",
+    "cert5.title": "Преподавание",
+    "cert5.desc": "Сертификат ProTalk — специалист по программной инженерии в искусственных нейронных сетях, право вести обучение",
 
     "cert6.title": "Работа с кодом",
     "cert6.desc": "Обучение от компании Anthropic — разработка веб и мобильных приложений",
+
+    "cert7.title": "Computer Vision",
+    "cert7.desc": "Курс по компьютерному зрению от Kaggle — обработка изображений и нейросети",
 
     "contact.label": "Контакт",
     "contact.title": "Готова обсудить ваш проект",
@@ -226,20 +229,23 @@ window.TRANSLATIONS = {
     "cert1.title": "ProTalk — Ambassador",
     "cert1.desc": "Completed training with ProTalk's own developers on building AI employees. Official service ambassador",
 
-    "cert2.title": "ProTalk — Instructor",
-    "cert2.desc": "Certified to officially teach and train others in ProTalk",
+    "cert2.title": "Working with AI",
+    "cert2.desc": "T—J Textbook course on ChatGPT and Midjourney — practical neural network tools",
 
-    "cert3.title": "T—J Textbook",
-    "cert3.desc": "Course on working with neural networks — fundamental and advanced AI tools",
+    "cert3.title": "Working with Documents",
+    "cert3.desc": "Netology Excel course — practical skills for working with spreadsheets and data",
 
-    "cert4.title": "Netodology",
-    "cert4.desc": "Course on Excel, knowledge bases and Google integrations. Additional hands-on experience with Google Apps Script",
+    "cert4.title": "Advertising Knowledge",
+    "cert4.desc": "PromoPult certificate — targeted advertising in social networks",
 
-    "cert5.title": "Advertising",
-    "cert5.desc": "Advertising setup course — understanding project promotion from day one of development",
+    "cert5.title": "Teaching",
+    "cert5.desc": "ProTalk certificate — software engineering specialist in artificial neural networks, authorized to teach",
 
     "cert6.title": "Working with Code",
     "cert6.desc": "Training by Anthropic — web and mobile application development",
+
+    "cert7.title": "Computer Vision",
+    "cert7.desc": "Kaggle course on computer vision — image processing and neural networks",
 
     "contact.label": "Contact",
     "contact.title": "Ready to discuss your project",
