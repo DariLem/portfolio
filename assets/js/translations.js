@@ -51,6 +51,9 @@ window.TRANSLATIONS = {
     "s7.title": "Настройка инструментов для РФ",
     "s7.desc": "Настраиваю AI-инструменты для российских компаний с обходом ограничений и блокировок",
 
+    "s8.title": "Аудит ИИ-сервисов",
+    "s8.desc": "Нахожу критические проблемы в ИИ-продуктах до того, как их увидят клиенты: биллинг, UX, интеграции, конкурентный анализ",
+
     "projects.label": "Кейсы",
     "projects.title": "Реализованные проекты",
     "projects.desc": "Нажмите на карточку, чтобы узнать детали проекта",
@@ -64,6 +67,7 @@ window.TRANSLATIONS = {
     "filter.internal": "Внутренние процессы",
     "filter.sales": "Менеджер по продажам",
     "filter.mobile": "Приложения",
+    "filter.audit": "Консалтинг",
 
     "role.consultant": "Консультант",
     "role.mentor": "Наставник",
@@ -73,6 +77,7 @@ window.TRANSLATIONS = {
     "role.internal": "Внутренние процессы",
     "role.sales": "Менеджер по продажам",
     "role.mobile": "Мобильное приложение",
+    "role.audit": "Аудит",
 
     "steps.label": "Процесс",
     "steps.title": "Этапы работы",
@@ -133,7 +138,8 @@ window.TRANSLATIONS = {
     "projects.more": "Показать ещё",
     "projects.category.mobile": "Мобильные приложения",
     "projects.category.employees": "Нейро-сотрудники",
-    "projects.category.services": "Сервисы и автоматизация"
+    "projects.category.services": "Сервисы и автоматизация",
+    "projects.category.audit": "Консалтинг и продуктовый аудит"
   },
 
   en: {
@@ -188,6 +194,9 @@ window.TRANSLATIONS = {
     "s7.title": "Setup for Russia",
     "s7.desc": "I configure AI tools for Russian companies with workarounds for blocks and restrictions",
 
+    "s8.title": "AI Service Audit",
+    "s8.desc": "I find critical issues in AI products before your clients do: billing, UX, integrations, competitive analysis",
+
     "projects.label": "Cases",
     "projects.title": "Completed projects",
     "projects.desc": "Click a card to see project details",
@@ -201,6 +210,7 @@ window.TRANSLATIONS = {
     "filter.internal": "Internal Processes",
     "filter.sales": "Sales Manager",
     "filter.mobile": "Apps",
+    "filter.audit": "Consulting",
 
     "steps.label": "Process",
     "steps.title": "How we work",
@@ -262,6 +272,7 @@ window.TRANSLATIONS = {
     "projects.category.mobile": "Mobile Applications",
     "projects.category.employees": "AI Employees",
     "projects.category.services": "Services & Automation",
+    "projects.category.audit": "Consulting & Product Audit",
 
     "role.consultant": "Consultant",
     "role.mentor": "Mentor",
@@ -269,6 +280,7 @@ window.TRANSLATIONS = {
     "role.specialist": "Lead Specialist",
     "role.assistant": "Personal Assistant",
     "role.internal": "Internal Processes",
-    "role.sales": "Sales Manager"
+    "role.sales": "Sales Manager",
+    "role.audit": "Audit"
   }
 };

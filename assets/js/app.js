@@ -150,6 +150,7 @@ let visibleProjectsCount = 6;
 
 const integrationIcons = {
   'Телеграм': '✈️', 'Telegram': '✈️', 'API Телеграм': '✈️',
+  'ВКонтакте': '💙', 'VK': '💙',
   'WhatsApp': '💬', 'WhatsApp API': '💬',
   'Сайт': '🌐',
   'Битрикс24': '🏢',
@@ -175,7 +176,8 @@ const roleMap = {
   'Личный ассистент': 'role.assistant',
   'Внутренние процессы': 'role.internal',
   'Менеджер по продажам': 'role.sales',
-  'Мобильное приложение': 'role.mobile'
+  'Мобильное приложение': 'role.mobile',
+  'Аудит': 'role.audit'
 };
 
 function getIcon(integration) {
@@ -193,8 +195,9 @@ function renderProjects(filter, isLoadMore = false) {
   const loadMoreBtnContainer = document.querySelector('.projects-more-container');
   
   const mobileApps = window.PROJECTS.filter(p => p.role === 'Мобильное приложение');
-  const allEmployees = window.PROJECTS.filter(p => p.role !== 'Мобильное приложение');
-  const services = []; 
+  const auditProjects = window.PROJECTS.filter(p => p.role === 'Аудит');
+  const allEmployees = window.PROJECTS.filter(p => p.role !== 'Мобильное приложение' && p.role !== 'Аудит');
+  const services = [];
 
   // Determine which categories to show
   let categoriesToShow = [];
@@ -202,8 +205,11 @@ function renderProjects(filter, isLoadMore = false) {
     categoriesToShow = [
       { id: 'mobile', title: t['projects.category.mobile'], items: mobileApps, icon: '📱' },
       { id: 'employee', title: t['projects.category.employees'], items: allEmployees, icon: '🤖' },
+      { id: 'audit', title: t['projects.category.audit'], items: auditProjects, icon: '🔍' },
       { id: 'service', title: t['projects.category.services'], items: services, icon: '⚡' }
     ];
+  } else if (filter === 'Аудит') {
+    categoriesToShow = [{ id: 'audit', title: t['projects.category.audit'], items: auditProjects, icon: '🔍' }];
   } else if (filter === 'employee' || Object.values(roleMap).includes(filter) || filter.startsWith('role.') || allEmployees.some(p => p.role === filter)) {
     categoriesToShow = [{ id: 'employee', title: t['projects.category.employees'], items: allEmployees, icon: '🤖' }];
   } else if (filter === 'Мобильное приложение') {

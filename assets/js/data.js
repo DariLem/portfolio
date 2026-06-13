@@ -1,5 +1,14 @@
 window.PROJECTS = [
   {
+    id: 46,
+    name: "Аудит SaaS-конструктора ИИ-ботов перед коммерческим запуском",
+    nameEn: "AI Bot Builder SaaS Audit Before Commercial Launch",
+    role: "Аудит",
+    description: "Провела полный продуктовый аудит SaaS-платформы (конструктор ИИ-ботов) перед масштабным запуском на онлайн-школы и первых бизнес-клиентов. Обнаружила критический баг в биллинге — система некорректно списывала деньги (11 рублей за 6 простых сообщений). Выявила: зависание чата после 3–4 вопросов, поле ввода уходило под экран, подключение к Telegram и ВКонтакте без единой подсказки. Провела конкурентный анализ и расставила приоритеты доработок. Баг устранён до запуска — репутация и деньги первых клиентов сохранены. Продукт направлен на срочную двухнедельную доработку. По итогам получила долгосрочный контракт на развитие продукта.",
+    descriptionEn: "Conducted a full product audit of an AI bot builder SaaS platform before its large-scale launch to online schools and first business clients. Found a critical billing bug (11 RUB charged for 6 simple messages). Identified: chat freezing after 3–4 messages, input field going off-screen, no onboarding hints for Telegram and VK integration. Delivered a competitive analysis and prioritised fix list. Bug fixed before launch — client reputation and first-user funds protected. Product sent for urgent 2-week revision. Secured long-term contract to develop the product further.",
+    integrations: ["Телеграм", "ВКонтакте"],
+  },
+  {
     id: 100,
     name: "Садовод — AI-помощник огородника",
     nameEn: "Sadovod — AI Garden Assistant",
