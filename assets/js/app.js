@@ -325,9 +325,9 @@ function renderProjects(filter, isLoadMore = false) {
         if (p && p.rustore) window.open(p.rustore, '_blank');
         return;
       }
-      if (e.target.closest('.project-website')) {
-        const p = window.PROJECTS.find(x => x.id === id);
-        if (p && p.website) window.open(p.website, '_blank');
+      if (e.target.closest('.project-cta')) return;
+      if (e.target.closest('.project-thumb')) {
+        openImageModal(e.target.closest('.project-thumb').dataset.src);
         return;
       }
       openModal(id);
@@ -340,17 +340,31 @@ function renderProjectCard(p, t) {
   const desc = lang === 'en' ? (p.descriptionEn || p.description) : p.description;
   const roleKey = roleMap[p.role] || p.role;
   const roleText = t[roleKey] || p.role;
-  
+  const isService = p.role === 'Сервис';
+
   const intIcons = p.integrations.slice(0, 4).map(i =>
     `<span class="project-integration">${getIcon(i)} ${i}</span>`
   ).join('');
-  
+
   const youtubeBtn = p.youtube ? `<div class="project-youtube">▶ ${t['modal.watch'] || 'Демо'}</div>` : '';
   const downloadBtn = p.rustore ? `<div class="project-rustore">⬇ ${t['modal.download'] || 'RuStore'}</div>` : '';
-  const websiteBtn = p.website ? `<div class="project-website">🌐 ${t['modal.website'] || 'Сайт'}</div>` : '';
+
+  const mediaBlock = p.images && p.images.length > 0
+    ? `<div class="project-card-media">
+        ${p.images.map(img => `<img class="project-thumb" src="${img}" data-src="${img}" alt="${name}" loading="lazy">`).join('')}
+       </div>`
+    : '';
+
+  const footer = isService
+    ? `<a href="https://t.me/Dariana_lem" class="project-cta" target="_blank" rel="noopener">✈️ ${t['project.cta'] || 'Обсудить похожий проект'}</a>`
+    : `<div class="project-footer">
+        <div style="display: flex; gap: 8px;">${youtubeBtn}${downloadBtn}</div>
+        <div class="project-links"><div class="project-link">→</div></div>
+      </div>`;
 
   return `
     <div class="project-card animate-on-scroll visible" data-id="${p.id}">
+      ${mediaBlock}
       <div class="project-card-top">
         <div class="project-emoji">${getIcon(p.integrations[0])}</div>
         <div class="project-role">${roleText}</div>
@@ -358,10 +372,7 @@ function renderProjectCard(p, t) {
       <h3 class="project-title">${name}</h3>
       <p class="project-desc">${desc}</p>
       <div class="project-integrations">${intIcons}</div>
-      <div class="project-footer">
-        <div style="display: flex; gap: 8px;">${youtubeBtn}${downloadBtn}${websiteBtn}</div>
-        <div class="project-links"><div class="project-link">→</div></div>
-      </div>
+      ${footer}
     </div>`;
 }
 
@@ -403,8 +414,8 @@ function openModal(id) {
     ? `<a href="${p.rustore}" class="btn-outline" target="_blank" rel="noopener" style="margin-top: 12px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">⬇ ${t['modal.download'] || 'Скачать в RuStore'}</a>`
     : '';
 
-  const websiteBlock = p.website
-    ? `<a href="${p.website}" class="btn-outline" target="_blank" rel="noopener" style="margin-top: 12px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">🌐 ${t['modal.website'] || 'Открыть сайт'}</a>`
+  const ctaBlock = p.role === 'Сервис'
+    ? `<a href="https://t.me/Dariana_lem" class="btn-primary" target="_blank" rel="noopener" style="margin-top: 12px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">✈️ ${t['project.cta'] || 'Обсудить похожий проект'}</a>`
     : '';
 
   const galleryBlock = p.images && p.images.length > 0
@@ -431,7 +442,7 @@ function openModal(id) {
         ${galleryBlock}
         ${ytBlock}
         ${downloadBlock}
-        ${websiteBlock}
+        ${ctaBlock}
       </div>
     </div>
   `;
