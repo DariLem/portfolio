@@ -9,6 +9,41 @@ window.PROJECTS = [
     integrations: ["Телеграм", "ВКонтакте"],
   },
   {
+    id: 101,
+    name: "24Логист — автоматизация контроля водителей для транспортных компаний",
+    nameEn: "24Logist — Automated Driver Control for Trucking Companies",
+    role: "Сервис",
+    description: "24Логист — SaaS-сервис автоматического контроля водителей для транспортных и логистических компаний, который заменяет ручной обзвон диспетчером. Система сама отправляет водителю 4 напоминания по этапам рейса — «Готов к рейсу?», «Забрал груз?», «Как дорога?», «Груз доставлен?» — через WhatsApp, MAX и резервный SMS-канал (МТС), а статус рейса обновляется на live-канбан-доске каждые 10 секунд. Рейсы и водители загружаются из Excel одним файлом, дубли не создаются повторно. Встроена аналитика надёжности: рейтинг водителей и перевозчиков по опозданиям и молчанию, среднее время ответа водителя (в среднем 6 минут), статистика доставки по каналам связи. Данные каждой компании изолированы в отдельной схеме PostgreSQL, все действия менеджеров логируются. Спроектировала архитектуру и разработала сервис целиком: backend на FastAPI, интеграции с WhatsApp/MAX/SMS и фронтенд; сервис развёрнут в продакшене.",
+    descriptionEn: "24Logist is a SaaS platform that automates driver control for trucking and logistics companies, replacing manual dispatcher phone calls. It automatically sends drivers four scheduled check-ins per trip — ready to depart, cargo picked up, en-route status, cargo delivered — via WhatsApp, MAX and a backup SMS channel (MTS), with trip status shown on a live Kanban board that refreshes every 10 seconds. Trips and drivers import straight from a single Excel file with automatic duplicate detection. Built-in reliability analytics rank drivers and carriers by delays and unanswered messages and track average driver response time (around 6 minutes). Each company's data is isolated in its own PostgreSQL schema, with full manager action logging. Designed the architecture and built the product end-to-end: FastAPI backend, WhatsApp/MAX/SMS integrations and frontend; deployed to production.",
+    integrations: ["WhatsApp", "MAX", "SMS", "Excel", "PostgreSQL", "FastAPI"],
+    website: "https://drivers-control.onrender.com",
+    images: [
+      "assets/images/projects/logist/hero.jpg",
+      "assets/images/projects/logist/funnel.jpg",
+      "assets/images/projects/logist/kanban.jpg",
+      "assets/images/projects/logist/channels.jpg",
+      "assets/images/projects/logist/analytics.jpg",
+      "assets/images/projects/logist/security.jpg"
+    ]
+  },
+  {
+    id: 102,
+    name: "AI ProfitFlow — ИИ-поиск поставщиков и каналов сбыта",
+    nameEn: "AI ProfitFlow — AI-Powered Supplier & Sales Channel Finder",
+    role: "Сервис",
+    description: "AI ProfitFlow — десктоп-приложение для Windows, которое автоматизирует поиск поставщиков и каналов сбыта с помощью ИИ: от запроса до готового коммерческого предложения в почте, без часов ручного поиска по Google и Excel. Два режима в одном окне: «Поставщики» — где купить нужный товар по городу и региону, и «Каналы сбыта» — кому его продать. ИИ сам генерирует поисковые запросы и разбирает выдачу Google/SerpAPI с резервным каналом через DuckDuckGo, парсит цены, наличие и контакты с сайтов (включая сложные страницы — через Playwright), дедуплицирует домены и отсеивает агрегаторы. Каждое предложение получает ИИ-оценку: плюсы, минусы, риски, рекомендация. Из отобранных позиций одним кликом собирается текст коммерческого предложения и уходит через Gmail (OAuth 2.0) прямо из приложения. Результаты выгружаются в Excel, история поисков и КП хранится в локальной SQLite-базе. Поисковый и аналитический слой работает через ProTalk — единый API к нескольким LLM, Google и Perplexity. Спроектировала архитектуру и разработала продукт целиком: десктоп-интерфейс на CustomTkinter, парсинг и ИИ-интеграции, сервер лицензирования на FastAPI с шифрованием ключей; приложение распространяется как один .exe без установки Python.",
+    descriptionEn: "AI ProfitFlow is a Windows desktop app that automates supplier and sales-channel discovery with AI, taking a request all the way to a ready commercial offer in the inbox — no more hours spent manually searching Google and juggling spreadsheets. It has two modes in one window: \"Suppliers\" — where to buy a given product by city and region, and \"Sales Channels\" — who to sell it to. AI generates the search queries itself and parses Google/SerpAPI results with a DuckDuckGo fallback, scrapes prices, availability and contacts from vendor sites (including hard-to-parse pages via Playwright), deduplicates domains and filters out marketplaces. Every offer gets an AI score: pros, cons, risks, recommendation. Selected items are turned into a commercial proposal in one click and sent straight from the app via Gmail (OAuth 2.0). Results export to Excel, with search and proposal history kept in a local SQLite database. The search and analysis layer runs through ProTalk, a single API in front of several LLMs, Google and Perplexity. Designed the architecture and built the product end-to-end: the CustomTkinter desktop UI, scraping and AI integrations, and a FastAPI license server with key encryption; ships as a single .exe with no Python install required.",
+    integrations: ["ProTalk API", "Google", "Gmail", "Excel", "Playwright"],
+    images: [
+      "assets/images/projects/zacupka/cover.jpg",
+      "assets/images/projects/zacupka/interface.jpg",
+      "assets/images/projects/zacupka/workflow.jpg",
+      "assets/images/projects/zacupka/features.jpg",
+      "assets/images/projects/zacupka/stack.jpg",
+      "assets/images/projects/zacupka/results.jpg"
+    ]
+  },
+  {
     id: 100,
     name: "Садовод — AI-помощник огородника",
     nameEn: "Sadovod — AI Garden Assistant",

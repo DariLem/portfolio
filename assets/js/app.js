@@ -165,7 +165,16 @@ const integrationIcons = {
   'OpenAI': '🧠',
   'API ПроТолк': '🔮', 'ProTalk': '🔮',
   'Сторонний сервис': '🔌',
-  'Wapico': '📡'
+  'Wapico': '📡',
+  'MAX': '🟢',
+  'SMS': '💌',
+  'Excel': '📊',
+  'PostgreSQL': '🗄️',
+  'FastAPI': '⚙️',
+  'ProTalk API': '🔮',
+  'Google': '🔍',
+  'Gmail': '📧',
+  'Playwright': '🎭'
 };
 
 const roleMap = {
@@ -177,7 +186,8 @@ const roleMap = {
   'Внутренние процессы': 'role.internal',
   'Менеджер по продажам': 'role.sales',
   'Мобильное приложение': 'role.mobile',
-  'Аудит': 'role.audit'
+  'Аудит': 'role.audit',
+  'Сервис': 'role.service'
 };
 
 function getIcon(integration) {
@@ -196,8 +206,8 @@ function renderProjects(filter, isLoadMore = false) {
   
   const mobileApps = window.PROJECTS.filter(p => p.role === 'Мобильное приложение');
   const auditProjects = window.PROJECTS.filter(p => p.role === 'Аудит');
-  const allEmployees = window.PROJECTS.filter(p => p.role !== 'Мобильное приложение' && p.role !== 'Аудит');
-  const services = [];
+  const services = window.PROJECTS.filter(p => p.role === 'Сервис');
+  const allEmployees = window.PROJECTS.filter(p => p.role !== 'Мобильное приложение' && p.role !== 'Аудит' && p.role !== 'Сервис');
 
   // Determine which categories to show
   let categoriesToShow = [];
@@ -315,6 +325,11 @@ function renderProjects(filter, isLoadMore = false) {
         if (p && p.rustore) window.open(p.rustore, '_blank');
         return;
       }
+      if (e.target.closest('.project-website')) {
+        const p = window.PROJECTS.find(x => x.id === id);
+        if (p && p.website) window.open(p.website, '_blank');
+        return;
+      }
       openModal(id);
     });
   });
@@ -332,6 +347,7 @@ function renderProjectCard(p, t) {
   
   const youtubeBtn = p.youtube ? `<div class="project-youtube">▶ ${t['modal.watch'] || 'Демо'}</div>` : '';
   const downloadBtn = p.rustore ? `<div class="project-rustore">⬇ ${t['modal.download'] || 'RuStore'}</div>` : '';
+  const websiteBtn = p.website ? `<div class="project-website">🌐 ${t['modal.website'] || 'Сайт'}</div>` : '';
 
   return `
     <div class="project-card animate-on-scroll visible" data-id="${p.id}">
@@ -343,7 +359,7 @@ function renderProjectCard(p, t) {
       <p class="project-desc">${desc}</p>
       <div class="project-integrations">${intIcons}</div>
       <div class="project-footer">
-        <div style="display: flex; gap: 8px;">${youtubeBtn}${downloadBtn}</div>
+        <div style="display: flex; gap: 8px;">${youtubeBtn}${downloadBtn}${websiteBtn}</div>
         <div class="project-links"><div class="project-link">→</div></div>
       </div>
     </div>`;
@@ -387,6 +403,10 @@ function openModal(id) {
     ? `<a href="${p.rustore}" class="btn-outline" target="_blank" rel="noopener" style="margin-top: 12px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">⬇ ${t['modal.download'] || 'Скачать в RuStore'}</a>`
     : '';
 
+  const websiteBlock = p.website
+    ? `<a href="${p.website}" class="btn-outline" target="_blank" rel="noopener" style="margin-top: 12px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">🌐 ${t['modal.website'] || 'Открыть сайт'}</a>`
+    : '';
+
   const galleryBlock = p.images && p.images.length > 0
     ? `<div class="modal-gallery" style="margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px;">
         ${p.images.map(img => `<img src="${img}" style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); cursor: pointer;" onclick="window.open('${img}', '_blank')">`).join('')}
@@ -411,6 +431,7 @@ function openModal(id) {
         ${galleryBlock}
         ${ytBlock}
         ${downloadBlock}
+        ${websiteBlock}
       </div>
     </div>
   `;

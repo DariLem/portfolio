@@ -78,6 +78,7 @@ window.TRANSLATIONS = {
     "role.sales": "Менеджер по продажам",
     "role.mobile": "Мобильное приложение",
     "role.audit": "Аудит",
+    "role.service": "Сервис",
 
     "steps.label": "Процесс",
     "steps.title": "Этапы работы",
@@ -135,6 +136,7 @@ window.TRANSLATIONS = {
     "modal.role": "Роль",
     "modal.watch": "Смотреть демо",
     "modal.download": "Скачать в RuStore",
+    "modal.website": "Открыть сайт",
     "projects.more": "Показать ещё",
     "projects.category.mobile": "Мобильные приложения",
     "projects.category.employees": "Нейро-сотрудники",
@@ -268,6 +270,7 @@ window.TRANSLATIONS = {
     "modal.role": "Role",
     "modal.watch": "Watch demo",
     "modal.download": "Download on RuStore",
+    "modal.website": "Visit website",
     "projects.more": "Show more",
     "projects.category.mobile": "Mobile Applications",
     "projects.category.employees": "AI Employees",
@@ -281,6 +284,7 @@ window.TRANSLATIONS = {
     "role.assistant": "Personal Assistant",
     "role.internal": "Internal Processes",
     "role.sales": "Sales Manager",
-    "role.audit": "Audit"
+    "role.audit": "Audit",
+    "role.service": "Service"
   }
 };
