@@ -14,7 +14,13 @@ window.TRANSLATIONS = {
     "nav.projects": "Кейсы",
     "nav.steps": "Этапы",
     "nav.certs": "Сертификаты",
+    "nav.blog": "Блог",
     "nav.contact": "Контакт",
+
+    "blog.label": "Блог",
+    "blog.title": "Статьи об ИИ и автоматизации бизнеса",
+    "blog.desc": "Разборы кейсов, инструменты и практика внедрения нейро-сотрудников",
+    "blog.empty": "Скоро здесь появятся статьи",
 
     "about.label": "О себе",
     "about.title": "5 лет на передовой ИИ",
@@ -28,6 +34,7 @@ window.TRANSLATIONS = {
 
     "services.label": "Услуги",
     "services.title": "Что я делаю",
+    "services.pricing": "Стоимость рассчитывается индивидуально под задачи проекта",
 
     "s1.title": "Нейро-сотрудники",
     "s1.desc": "Создаю AI-ботов, которые работают как полноценные сотрудники: консультируют, обрабатывают заявки, продают, обучают и автоматизируют рутину 24/7",
@@ -130,7 +137,9 @@ window.TRANSLATIONS = {
     "contact.desc": "Напишите удобным способом — отвечаю быстро",
     "contact.cta": "Записаться на созвон",
 
-    "footer.copy": "© 2025 Дарьяна · AI-разработчик нейро-сотрудников",
+    "footer.copy": "© 2026 Дарьяна · Все права защищены. Материалы сайта защищены авторским правом.",
+    "cookie.text": "Мы используем аналитические файлы cookie (Яндекс.Метрика, Google Analytics), чтобы улучшать сайт.",
+    "cookie.accept": "Понятно",
 
     "modal.integrations": "Интеграции",
     "modal.role": "Роль",
@@ -159,7 +168,13 @@ window.TRANSLATIONS = {
     "nav.projects": "Cases",
     "nav.steps": "Process",
     "nav.certs": "Certificates",
+    "nav.blog": "Blog",
     "nav.contact": "Contact",
+
+    "blog.label": "Blog",
+    "blog.title": "Articles on AI and business automation",
+    "blog.desc": "Case breakdowns, tools, and practical notes on rolling out neural employees",
+    "blog.empty": "Articles are coming soon",
 
     "about.label": "About me",
     "about.title": "5 years at the forefront of AI",
@@ -173,6 +188,7 @@ window.TRANSLATIONS = {
 
     "services.label": "Services",
     "services.title": "What I do",
+    "services.pricing": "Pricing is calculated individually based on your project's needs",
 
     "s1.title": "AI Employees",
     "s1.desc": "I build AI bots that function as full-time staff: consulting, processing leads, selling, training, and automating routine tasks around the clock",
@@ -264,7 +280,9 @@ window.TRANSLATIONS = {
     "contact.desc": "Reach out in whatever way suits you — I respond quickly",
     "contact.cta": "Book a discovery call",
 
-    "footer.copy": "© 2025 Daryana · AI Developer & Neural Employee Builder",
+    "footer.copy": "© 2026 Daryana · All rights reserved. Site content is protected by copyright.",
+    "cookie.text": "We use analytics cookies (Yandex.Metrica, Google Analytics) to improve the site.",
+    "cookie.accept": "Got it",
 
     "modal.integrations": "Integrations",
     "modal.role": "Role",

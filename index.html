@@ -16,6 +16,15 @@
   <!-- Yandex Webmaster: замени content на свой код -->
   <!-- <meta name="yandex-verification" content="ТВОЙ_КОД_СЮДА"> -->
 
+  <!-- Analytics: раскомментируй и подставь свой счётчик, когда он будет готов.
+       Скрипты подгружаются из cookie-consent.js только после согласия на cookie. -->
+  <!--
+  <script>
+    window.YM_COUNTER_ID = 00000000; // Яндекс.Метрика
+    window.GA_MEASUREMENT_ID = 'G-XXXXXXX'; // Google Analytics
+  </script>
+  -->
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://darilem.github.io/portfolio/">
@@ -121,6 +130,7 @@
       <a href="#projects" data-i18n="nav.projects">Кейсы</a>
       <a href="#steps" data-i18n="nav.steps">Этапы</a>
       <a href="#certs" data-i18n="nav.certs">Сертификаты</a>
+      <a href="blog/index.html" data-i18n="nav.blog">Блог</a>
       <a href="#contact" data-i18n="nav.contact">Контакт</a>
     </div>
     <div class="nav-actions">
@@ -140,6 +150,7 @@
   <a href="#projects" data-i18n="nav.projects">Кейсы</a>
   <a href="#steps" data-i18n="nav.steps">Этапы</a>
   <a href="#certs" data-i18n="nav.certs">Сертификаты</a>
+  <a href="blog/index.html" data-i18n="nav.blog">Блог</a>
   <a href="#contact" data-i18n="nav.contact">Контакт</a>
   <div class="nav-mobile-actions">
     <button class="lang-toggle-mobile" id="langToggleMobile" style="color: #94A3B8; font-weight: 600; padding: 10px;">EN</button>
@@ -264,6 +275,7 @@
     <div class="section-header">
       <div class="section-label animate-on-scroll" data-i18n="services.label">Услуги</div>
       <h2 class="section-title animate-on-scroll" data-i18n="services.title">С чем я помогаю бизнесу</h2>
+      <p class="section-desc animate-on-scroll" data-i18n="services.pricing">Стоимость рассчитывается индивидуально под задачи проекта</p>
     </div>
     <div class="services-grid">
       <div class="service-card featured animate-on-scroll">
@@ -545,7 +557,7 @@
          <a href="#" class="social-btn">LN</a>
       </div>
       
-      <p class="contact-note animate-on-scroll">© 2025 Дарьяна · AI-разработчик</p>
+      <p class="contact-note animate-on-scroll">© 2026 Дарьяна · AI-разработчик</p>
     </div>
   </div>
 </section>
@@ -553,13 +565,26 @@
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-inner">
-    <div class="footer-logo">Дарьяна.</div>
-    <div class="footer-copyright" data-i18n="footer.copy">© 2025 Дарьяна · AI-разработчик нейро-сотрудников</div>
-    <div class="footer-links">
-      <a href="https://t.me/Dariana_lem" target="_blank" rel="noopener">Telegram</a>
+    <div class="footer-top">
+      <div class="footer-logo">Дарьяна.</div>
+      <div class="footer-links">
+        <a href="https://t.me/Dariana_lem" target="_blank" rel="noopener">Telegram</a>
+      </div>
     </div>
+    <div class="footer-legal">
+      <p>Самозанятая Лемешевская Дарья Геннадьевна</p>
+      <p>УНП: KA9792041 · Плательщик налога на профессиональный доход</p>
+      <p><a href="mailto:dariana141@gmail.com">dariana141@gmail.com</a></p>
+    </div>
+    <div class="footer-copyright" data-i18n="footer.copy">© 2026 Дарьяна · Все права защищены. Материалы сайта защищены авторским правом.</div>
   </div>
 </footer>
+
+<!-- COOKIE CONSENT -->
+<div class="cookie-banner" id="cookieBanner">
+  <p data-i18n="cookie.text">Мы используем аналитические файлы cookie (Яндекс.Метрика, Google Analytics), чтобы улучшать сайт.</p>
+  <button class="btn-outline cookie-accept" id="cookieAccept" data-i18n="cookie.accept">Понятно</button>
+</div>
 
 <!-- MODAL -->
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
@@ -579,5 +604,6 @@
 <script src="assets/js/data.js"></script>
 <script src="assets/js/translations.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/cookie-consent.js"></script>
 </body>
 </html>
