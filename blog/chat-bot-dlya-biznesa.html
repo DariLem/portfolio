@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Чат-бот для бизнеса: какие бывают и как выбрать | Блог Дарьяны</title>
+  <meta name="description" content="Чат-боты для бизнеса бывают кнопочными и на базе ИИ. Разбираю разницу, плюсы и минусы Telegram, WhatsApp и MAX, и как выбрать между конструктором и разработкой.">
+  <meta name="author" content="Дарьяна">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://darilem.github.io/portfolio/blog/chat-bot-dlya-biznesa.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://darilem.github.io/portfolio/blog/chat-bot-dlya-biznesa.html">
+  <meta property="og:title" content="Чат-бот для бизнеса: какие бывают и как выбрать">
+  <meta property="og:description" content="Чат-боты для бизнеса бывают кнопочными и на базе ИИ. Разбираю разницу, плюсы и минусы Telegram, WhatsApp и MAX, и как выбрать между конструктором и разработкой.">
+  <meta property="og:image" content="https://darilem.github.io/portfolio/assets/images/photo.jpg">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://darilem.github.io/portfolio/blog/chat-bot-dlya-biznesa.html">
+  <meta name="twitter:title" content="Чат-бот для бизнеса: какие бывают и как выбрать">
+  <meta name="twitter:description" content="Чат-боты для бизнеса бывают кнопочными и на базе ИИ. Разбираю разницу, плюсы и минусы Telegram, WhatsApp и MAX, и как выбрать между конструктором и разработкой.">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Чат-бот для бизнеса: какие бывают и как выбрать",
+    "description": "Чат-боты для бизнеса бывают кнопочными и на базе ИИ. Разбираю разницу, плюсы и минусы Telegram, WhatsApp и MAX, и как выбрать между конструктором и разработкой.",
+    "image": "https://darilem.github.io/portfolio/assets/images/photo.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Дарьяна",
+      "url": "https://darilem.github.io/portfolio/"
+    },
+    "datePublished": "2026-09-28",
+    "dateModified": "2026-09-28",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://darilem.github.io/portfolio/blog/chat-bot-dlya-biznesa.html"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="../index.html" class="nav-logo">
+      <div class="nav-logo-icon">D</div>
+      Дарьяна<span class="dot">.</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html#about" data-i18n="nav.about">О себе</a>
+      <a href="../index.html#services" data-i18n="nav.services">Услуги</a>
+      <a href="../index.html#projects" data-i18n="nav.projects">Кейсы</a>
+      <a href="../index.html#steps" data-i18n="nav.steps">Этапы</a>
+      <a href="../index.html#certs" data-i18n="nav.certs">Сертификаты</a>
+      <a href="index.html" data-i18n="nav.blog">Блог</a>
+      <a href="../index.html#contact" data-i18n="nav.contact">Контакт</a>
+    </div>
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle">EN</button>
+      <a href="https://t.me/Dariana_lem" class="btn-primary nav-cta" target="_blank" rel="noopener" data-i18n="hero.cta1">Написать</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="nav-mobile-menu" id="navMobileMenu">
+  <a href="../index.html#about" data-i18n="nav.about">О себе</a>
+  <a href="../index.html#services" data-i18n="nav.services">Услуги</a>
+  <a href="../index.html#projects" data-i18n="nav.projects">Кейсы</a>
+  <a href="../index.html#steps" data-i18n="nav.steps">Этапы</a>
+  <a href="../index.html#certs" data-i18n="nav.certs">Сертификаты</a>
+  <a href="index.html" data-i18n="nav.blog">Блог</a>
+  <a href="../index.html#contact" data-i18n="nav.contact">Контакт</a>
+  <div class="nav-mobile-actions">
+    <button class="lang-toggle-mobile" id="langToggleMobile" style="color: #94A3B8; font-weight: 600; padding: 10px;">EN</button>
+    <a href="https://t.me/Dariana_lem" class="btn-primary" style="width: 100%;" data-i18n="hero.cta1">Написать</a>
+  </div>
+</div>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="blog-article">
+      <a href="index.html" class="section-label animate-on-scroll" style="display:inline-block; margin-bottom: 24px;">← Все статьи блога</a>
+      <h1 class="animate-on-scroll">Чат-бот для бизнеса: какие бывают и как выбрать</h1>
+
+      <p class="animate-on-scroll">Чат-боты для бизнеса делятся по уровню сложности: от простых кнопочных ботов, которые ведут клиента по заранее прописанному дереву вопросов и ответов, до чат-ботов на базе ИИ, понимающих свободный текст и отвечающих на нестандартные вопросы без жёсткого сценария. Какой вариант подойдёт именно вам, зависит от задач, которые бот должен закрывать, и от канала, в котором вы будете его запускать — Telegram, WhatsApp, MAX или собственный сайт.</p>
+
+      <h2 class="animate-on-scroll">Какие бывают чат-боты: от кнопок до ИИ</h2>
+      <p class="animate-on-scroll">Кнопочный, или сценарный, бот — это дерево заранее прописанных веток: клиент нажимает на кнопку или пишет ключевое слово, бот отвечает заготовленным текстом и предлагает следующий шаг. Такой бот быстро настраивается, стоит недорого и отлично справляется с предсказуемыми задачами: показать прайс, записать на приём, принять простую заявку. Проблема начинается, когда клиент пишет вопрос своими словами, а не выбирает пункт меню, — сценарный бот либо не понимает реплику, либо переводит диалог на оператора, и вся экономия времени на этом заканчивается.</p>
+      <p class="animate-on-scroll">Чат-бот на базе ИИ устроен иначе: он анализирует смысл сообщения, а не ищет совпадение с шаблоном, поэтому может ответить на вопрос, сформулированный как угодно, и опереться на базу знаний конкретного бизнеса — прайсы, регламенты, ответы на частые вопросы. Для бизнеса здесь важны две вещи: во-первых, такой бот требует более тщательной настройки — нужно собрать и структурировать знания, на основе которых он будет отвечать, а не просто нарисовать дерево диалога; во-вторых, при росте задач он может эволюционировать в полноценного ИИ-агента, который не только отвечает, но и сам выполняет действия — оформляет заявку, обновляет статус в CRM. Подробно о том, чем ИИ-агент технически отличается от чат-бота, я разбирала в статье <a href="chto-takoe-ii-agent.html">«Что такое ИИ-агент и чем он отличается от чат-бота»</a> — здесь не буду повторять этот разбор, а сосредоточусь на том, что важно знать именно при выборе бота для бизнеса.</p>
+      <p class="animate-on-scroll">На практике для стабильного потока однотипных вопросов (часы работы, адрес, статус заказа) хватает и кнопочного бота. А там, где клиенты приходят с разными формулировками, сложными вопросами или ожидают живого диалога — например, при продаже сложных услуг или в поддержке, — оправдан ИИ-бот, даже если его настройка стоит дороже и занимает больше времени.</p>
+
+      <h2 class="animate-on-scroll">В каком канале запускать: Telegram, WhatsApp, MAX или сайт</h2>
+      <p class="animate-on-scroll">Telegram — самый гибкий вариант для старта: Bot API у площадки открытый и бесплатный, бота можно подключить к кнопкам, мини-приложениям и разным сценариям без посредников. Из минусов — часть клиентов, особенно старшего возраста или из определённых сфер (медицина, госсектор), может быть просто не зарегистрирована в Telegram, и на них такой канал не сработает.</p>
+      <p class="animate-on-scroll">WhatsApp для бизнеса требует отдельного внимания: легально подключить чат-бота, CRM или другую систему можно только через официальный WhatsApp Business API — у обычного приложения WhatsApp закрытый протокол, и подключить к нему бота напрямую нельзя. Через Business API удобно отправлять напоминания, уведомления о статусе заказа и вести диалог с клиентом, но у площадки жёсткие правила на рассылки: массово присылать рекламные сообщения нельзя, можно только сервисные уведомления, в конце которых допустимо персональное предложение. Обычно для подключения WhatsApp Business API нужен провайдер-интегратор, и это стоит закладывать в бюджет и сроки.</p>
+      <p class="animate-on-scroll">MAX — российский мессенджер, который активно развивает возможности для бизнеса: у платформы есть собственный Bot API, боты можно строить на сценариях с ИИ-ветвлениями, а не только на жёстком дереве, постепенно расширяется интеграция с CRM. Площадка моложе Telegram и WhatsApp, поэтому часть инструментов всё ещё донастраивается, но для бизнеса, который работает с российской аудиторией, MAX стоит рассматривать всерьёз уже сейчас — особенно как дополнительный канал, а не единственный.</p>
+      <p class="animate-on-scroll">Чат-бот на сайте — самый независимый вариант: он не зависит от политики мессенджеров в отношении рассылок и ботов, полностью в вашем контроле, но требует, чтобы у сайта уже был свой трафик, иначе клиенты его просто не увидят.</p>
+      <p class="animate-on-scroll">На практике часто эффективнее не выбирать один канал, а комбинировать несколько под конкретную задачу. В проекте 24Логист — SaaS для транспортных компаний — я делала именно так: напоминания водителям уходят через WhatsApp и MAX, а SMS работает как резервный канал на случай, если сообщение не дошло через мессенджер. Такая связка снижает риск, что важное уведомление вообще не долетит до адресата.</p>
+
+      <h2 class="animate-on-scroll">Как выбрать между готовым конструктором и разработкой под себя</h2>
+      <p class="animate-on-scroll">Готовый конструктор чат-ботов — это быстрый и недорогой способ закрыть простые задачи: FAQ, запись на услугу, приём заявок по шаблону. Если у вас несложный поток однотипных обращений и нет глубокой интеграции с внутренними системами, конструктора вполне может хватить.</p>
+      <p class="animate-on-scroll">Разработка под себя оправдана, когда боту нужно работать с вашей конкретной CRM или 1С, опираться на собственную базу знаний, говорить голосом бренда, а не шаблонными фразами, или выполнять действия, которые выходят за рамки стандартных блоков конструктора. Это дороже и дольше на старте, зато бот встраивается в реальные процессы компании, а не подстраивает процессы компании под ограничения конструктора. Честный ориентир такой: если задача укладывается в стандартные блоки — берите конструктор и не переплачивайте, если нет — экономия на конструкторе обычно оборачивается тем, что бота потом всё равно приходится переделывать или дорабатывать индивидуально.</p>
+      <p class="animate-on-scroll">Есть и промежуточный вариант: начать с конструктора, чтобы быстро проверить, что бот вообще нужен клиентам и приносит пользу, а затем перейти на индивидуальную разработку, когда сценариев и интеграций становится больше, чем конструктор способен обработать без костылей. Такой путь снижает риск вложиться в сложную разработку до того, как понятно, какие сценарии клиентам реально нужны.</p>
+
+      <p class="animate-on-scroll">Я проектирую и настраиваю чат-ботов и ИИ-агентов под конкретный бизнес — с интеграцией в CRM, мессенджеры и внутренние системы, будь то Telegram, WhatsApp, MAX или их комбинация, как в случае с 24Логист. Стоимость всегда считаю индивидуально, исходя из задач конкретного проекта.</p>
+    </div>
+
+    <div class="blog-post-cta animate-on-scroll">
+      <p>Нужен чат-бот для вашего бизнеса? Напишите в Telegram.</p>
+      <a href="https://t.me/Dariana_lem" class="btn-primary" target="_blank" rel="noopener">Написать в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-logo">Дарьяна.</div>
+      <div class="footer-links">
+        <a href="https://t.me/Dariana_lem" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>Самозанятая Лемешевская Дарья Геннадьевна</p>
+      <p>УНП: KA9792041 · Плательщик налога на профессиональный доход</p>
+      <p><a href="mailto:dariana141@gmail.com">dariana141@gmail.com</a></p>
+    </div>
+    <div class="footer-copyright" data-i18n="footer.copy">© 2026 Дарьяна · Все права защищены. Материалы сайта защищены авторским правом.</div>
+  </div>
+</footer>
+
+<!-- COOKIE CONSENT -->
+<div class="cookie-banner" id="cookieBanner">
+  <p data-i18n="cookie.text">Мы используем аналитические файлы cookie (Яндекс.Метрика, Google Analytics), чтобы улучшать сайт.</p>
+  <button class="btn-outline cookie-accept" id="cookieAccept" data-i18n="cookie.accept">Понятно</button>
+</div>
+
+<script src="../assets/js/translations.js"></script>
+<script src="../assets/js/blog-data.js"></script>
+<script src="../assets/js/blog.js"></script>
+<script src="../assets/js/cookie-consent.js"></script>
+</body>
+</html>

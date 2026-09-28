@@ -44,5 +44,32 @@ window.BLOG_POSTS = [
     descriptionEn: 'Learning to build AI agents starts not with coding but with dialogue-scenario design and one no-code platform, plus how my ProTalk training works.',
     date: '2026-09-28',
     url: 'obuchenie-ii-agentam.html'
+  },
+  {
+    slug: 'neiro-sotrudnik',
+    title: 'Нейро-сотрудник (ИИ-сотрудник): что это и как внедрить в бизнес',
+    titleEn: 'Neuro-Employee (AI Employee): What It Is and How to Bring One Into Your Business',
+    description: 'Нейро-сотрудник — ИИ-агент, встроенный в конкретную роль бизнеса: продажи, поддержку, заявки. Разбираю термин и способ внедрить ИИ-сотрудника в компанию.',
+    descriptionEn: 'A "neuro-employee" is an AI agent embedded in a specific business role — sales, support, request handling. What the term means and how to bring one into your company.',
+    date: '2026-09-28',
+    url: 'neiro-sotrudnik.html'
+  },
+  {
+    slug: 'avtomatizatsiya-biznesa-s-pomoshchyu-ii',
+    title: 'Автоматизация бизнеса с помощью ИИ: с чего начать',
+    titleEn: 'AI-Powered Business Automation: Where to Start',
+    description: 'Автоматизация бизнеса с помощью ИИ — это процессы, где решения принимает система на основе контекста, а не жёсткие правила. С чего начать внедрение.',
+    descriptionEn: 'AI-powered business automation means systems that decide based on context rather than rigid rules. Where to start implementing it.',
+    date: '2026-09-28',
+    url: 'avtomatizatsiya-biznesa-s-pomoshchyu-ii.html'
+  },
+  {
+    slug: 'chat-bot-dlya-biznesa',
+    title: 'Чат-бот для бизнеса: какие бывают и как выбрать',
+    titleEn: 'Chatbots for Business: Types and How to Choose',
+    description: 'Чат-боты для бизнеса бывают кнопочными и на базе ИИ. Разбираю разницу, плюсы и минусы Telegram, WhatsApp и MAX, и как выбрать между конструктором и разработкой.',
+    descriptionEn: 'Business chatbots range from button-scripted to AI-based. The difference, the pros and cons of Telegram, WhatsApp and MAX, and how to choose a constructor vs custom build.',
+    date: '2026-09-28',
+    url: 'chat-bot-dlya-biznesa.html'
   }
 ];
