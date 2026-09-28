@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>ИИ-агент для 1С и CRM: как подключить и что это даёт бизнесу | Блог Дарьяны</title>
+  <meta name="description" content="Можно ли подключить ИИ-агента к 1С и CRM и как это устроено технически: через API 1С, HTTP-сервисы, OData и вебхуки CRM. Сценарии и примеры внедрения.">
+  <meta name="author" content="Дарьяна">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://darilem.github.io/portfolio/blog/ii-agent-dlya-1s-i-crm.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://darilem.github.io/portfolio/blog/ii-agent-dlya-1s-i-crm.html">
+  <meta property="og:title" content="ИИ-агент для 1С и CRM: как подключить и что это даёт бизнесу">
+  <meta property="og:description" content="Можно ли подключить ИИ-агента к 1С и CRM и как это устроено технически: через API 1С, HTTP-сервисы, OData и вебхуки CRM. Сценарии и примеры внедрения.">
+  <meta property="og:image" content="https://darilem.github.io/portfolio/assets/images/photo.jpg">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://darilem.github.io/portfolio/blog/ii-agent-dlya-1s-i-crm.html">
+  <meta name="twitter:title" content="ИИ-агент для 1С и CRM: как подключить и что это даёт бизнесу">
+  <meta name="twitter:description" content="Можно ли подключить ИИ-агента к 1С и CRM и как это устроено технически: через API 1С, HTTP-сервисы, OData и вебхуки CRM. Сценарии и примеры внедрения.">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "ИИ-агент для 1С и CRM: как подключить и что это даёт бизнесу",
+    "description": "Можно ли подключить ИИ-агента к 1С и CRM и как это устроено технически: через API 1С, HTTP-сервисы, OData и вебхуки CRM. Сценарии и примеры внедрения.",
+    "image": "https://darilem.github.io/portfolio/assets/images/photo.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Дарьяна",
+      "url": "https://darilem.github.io/portfolio/"
+    },
+    "datePublished": "2026-09-28",
+    "dateModified": "2026-09-28",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://darilem.github.io/portfolio/blog/ii-agent-dlya-1s-i-crm.html"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="../index.html" class="nav-logo">
+      <div class="nav-logo-icon">D</div>
+      Дарьяна<span class="dot">.</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html#about" data-i18n="nav.about">О себе</a>
+      <a href="../index.html#services" data-i18n="nav.services">Услуги</a>
+      <a href="../index.html#projects" data-i18n="nav.projects">Кейсы</a>
+      <a href="../index.html#steps" data-i18n="nav.steps">Этапы</a>
+      <a href="../index.html#certs" data-i18n="nav.certs">Сертификаты</a>
+      <a href="index.html" data-i18n="nav.blog">Блог</a>
+      <a href="../index.html#contact" data-i18n="nav.contact">Контакт</a>
+    </div>
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle">EN</button>
+      <a href="https://t.me/Dariana_lem" class="btn-primary nav-cta" target="_blank" rel="noopener" data-i18n="hero.cta1">Написать</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="nav-mobile-menu" id="navMobileMenu">
+  <a href="../index.html#about" data-i18n="nav.about">О себе</a>
+  <a href="../index.html#services" data-i18n="nav.services">Услуги</a>
+  <a href="../index.html#projects" data-i18n="nav.projects">Кейсы</a>
+  <a href="../index.html#steps" data-i18n="nav.steps">Этапы</a>
+  <a href="../index.html#certs" data-i18n="nav.certs">Сертификаты</a>
+  <a href="index.html" data-i18n="nav.blog">Блог</a>
+  <a href="../index.html#contact" data-i18n="nav.contact">Контакт</a>
+  <div class="nav-mobile-actions">
+    <button class="lang-toggle-mobile" id="langToggleMobile" style="color: #94A3B8; font-weight: 600; padding: 10px;">EN</button>
+    <a href="https://t.me/Dariana_lem" class="btn-primary" style="width: 100%;" data-i18n="hero.cta1">Написать</a>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="blog-article">
+      <a href="index.html" class="section-label animate-on-scroll" style="display:inline-block; margin-bottom: 24px;">← Все статьи блога</a>
+      <h1 class="animate-on-scroll">ИИ-агент для 1С и CRM: как подключить и что это даёт бизнесу</h1>
+
+      <p class="animate-on-scroll">Да, ИИ-агента можно подключить к 1С и CRM, и для этого не нужно переписывать саму учётную систему: агент подключается через API 1С — HTTP-сервисы, веб-сервисы или стандартный интерфейс OData — либо через вебхуки и REST API CRM-системы, получая ограниченный доступ к нужным данным и операциям.</p>
+
+      <p class="animate-on-scroll">Дальше агент работает как прослойка между клиентом (или сотрудником) и учётной системой: принимает сообщение в мессенджере или на сайте, обращается к 1С или CRM за данными либо для записи изменений и возвращает ответ на человеческом языке. Ниже — зачем это нужно бизнесу, как это устроено технически и с чего обычно начинают внедрение.</p>
+
+      <h2 class="animate-on-scroll">Зачем бизнесу ИИ-агент поверх 1С или CRM</h2>
+      <p class="animate-on-scroll">Сами по себе 1С и CRM — это базы данных с интерфейсом для сотрудников. Клиент не может «спросить» у 1С остаток товара, а менеджер тратит время на то, чтобы вручную перепечатать информацию из одной системы в другую. ИИ-агент закрывает именно этот разрыв — он говорит на языке клиента, но действует внутри учётной системы.</p>
+      <p class="animate-on-scroll">На практике это выглядит так:</p>
+      <p class="animate-on-scroll">— клиент в WhatsApp или Telegram спрашивает про наличие товара, агент обращается к 1С и отвечает актуальным остатком и ценой, не отвлекая менеджера;</p>
+      <p class="animate-on-scroll">— агент квалифицирует входящего лида в переписке (бюджет, потребность, сроки) и сразу создаёт сделку с нужными полями в CRM, вместо того чтобы менеджер заводил её вручную после звонка;</p>
+      <p class="animate-on-scroll">— агент отслеживает просроченные счета или дебиторскую задолженность в 1С и напоминает клиенту или ответственному сотруднику, не дожидаясь, пока кто-то вспомнит проверить отчёт;</p>
+      <p class="animate-on-scroll">— агент сверяет статус заказа или отгрузки и сообщает клиенту, на каком этапе находится его заявка, без звонка в отдел логистики.</p>
+      <p class="animate-on-scroll">— агент напоминает менеджеру во время звонка или переписки ключевые данные по клиенту из CRM (история заказов, статус оплаты, договорённости из прошлых обращений), чтобы не приходилось переключаться между окнами и вспоминать контекст вручную.</p>
+      <p class="animate-on-scroll">Во всех этих сценариях ценность не в «искусственном интеллекте» самом по себе, а в том, что рутинные обращения перестают загружать сотрудников, а данные в CRM и 1С обновляются без ручного переноса. Для бизнеса на 1С это особенно заметно там, где учётная система исторически была «внутренним» инструментом только для бухгалтерии и склада, а клиенты и отдел продаж работали с ней только через посредника — теперь часть этого посредничества берёт на себя агент, и данные остаются актуальными без двойного ввода.</p>
+
+      <h2 class="animate-on-scroll">Как технически устроена интеграция</h2>
+      <p class="animate-on-scroll">1С изначально проектировалась с расчётом на внешние интеграции, поэтому вариантов подключения несколько, и выбор зависит от конфигурации и задачи:</p>
+      <p class="animate-on-scroll">— <strong>HTTP-сервисы</strong> — разработчик описывает на встроенном языке 1С собственные REST-подобные эндпоинты под конкретную задачу (например, «отдать остатки по артикулу» или «создать заказ»);</p>
+      <p class="animate-on-scroll">— <strong>веб-сервисы</strong> (на базе SOAP) — более старый, но всё ещё встречающийся способ обмена, особенно в интеграциях с унаследованными системами;</p>
+      <p class="animate-on-scroll">— <strong>стандартный интерфейс OData</strong>, который многие типовые конфигурации 1С поддерживают «из коробки» и который позволяет читать и изменять данные без написания отдельного серверного кода;</p>
+      <p class="animate-on-scroll">— обмен файлами или через промежуточные форматы (например, выгрузка/загрузка Excel) — там, где прямое подключение по API невозможно или избыточно.</p>
+      <p class="animate-on-scroll">CRM-системы (Bitrix24, amoCRM и другие) обычно уже предоставляют REST API и вебхуки: CRM сама уведомляет внешний сервис о событии — новый лид, смена стадии сделки, новое сообщение в чате, — а внешний сервис в ответ вызывает API CRM, чтобы обновить данные.</p>
+      <p class="animate-on-scroll">ИИ-агент в этой схеме — не замена 1С или CRM, а отдельный слой-оркестратор: он получает сообщение от клиента, формирует ответ с помощью языковой модели и переводит нужное действие в конкретный вызов API 1С или CRM, при этом права доступа, проверки и бизнес-логика самой учётной системы остаются на её стороне. Это важное разделение ответственности: агент не «редактирует базу напрямую» и не обходит правила, заложенные в 1С или CRM, — он работает через тот же интерфейс, что и штатные интеграции, только инициирует вызовы не по расписанию или клику пользователя, а по смыслу входящего сообщения.</p>
+      <p class="animate-on-scroll">Похожий подход мы реализовывали для 24Логист — SaaS для транспортных компаний, где нужно было связать WhatsApp, MAX и SMS-канал с системой в единый поток обращений, а также настроить импорт данных из Excel вместо ручного переноса. Логика та же, что и при подключении агента к 1С или CRM: разные каналы и форматы данных сводятся в одну систему через API и обмен файлами, а дальше уже агент или сама платформа решает, что делать с конкретным обращением.</p>
+
+      <h2 class="animate-on-scroll">Какие данные и процессы обычно подключают первыми</h2>
+      <p class="animate-on-scroll">Внедрение почти никогда не начинается с автоматизации «всей 1С целиком» — это и не нужно, и рискованно. На старте обычно берут один-два процесса с понятным результатом:</p>
+      <p class="animate-on-scroll">— остатки товаров и цены — агент отвечает клиентам без участия менеджера;</p>
+      <p class="animate-on-scroll">— статусы заказов и отгрузок — снижает число повторных обращений «где мой заказ»;</p>
+      <p class="animate-on-scroll">— создание и обновление сделок и лидов в CRM — исключает ручной перенос данных из переписки;</p>
+      <p class="animate-on-scroll">— напоминания по счетам и дебиторской задолженности — ускоряет оплату без дополнительной нагрузки на бухгалтерию;</p>
+      <p class="animate-on-scroll">— импорт структурированных данных (например, из Excel) в учётную систему — как в случае с 24Логист, где это было частью общей интеграции.</p>
+      <p class="animate-on-scroll">Такой точечный старт позволяет увидеть эффект за недели, а не месяцы, и уже на этой основе решать, какие процессы подключать дальше. Важно и то, что на этом этапе легко проверить качество ответов агента и точность операций с данными — прежде чем расширять доступ на более чувствительные процессы вроде финансов или складского учёта.</p>
+      <p class="animate-on-scroll">Отдельный вопрос — какой именно ИИ-агент выбрать для 1С: готовое коробочное решение, конструктор без кода или разработку под конкретную конфигурацию и бизнес-процессы. Универсального ответа нет — коробочные варианты быстрее запускаются, но хуже учитывают нестандартные процессы и особенности конкретной 1С, а решение под задачу требует больше времени на старте, зато точнее закрывает реальные сценарии бизнеса и проще дорабатывается по мере роста.</p>
+
+      <p class="animate-on-scroll">Если у вас есть 1С или CRM и вы хотите понять, какой из процессов имеет смысл автоматизировать в первую очередь, это можно обсудить предметно — с учётом вашей конфигурации и текущей нагрузки на команду.</p>
+    </div>
+    <div class="blog-post-cta animate-on-scroll">
+      <p>Хотите подключить ИИ-агента к своей 1С или CRM?</p>
+      <a href="https://t.me/Dariana_lem" class="btn-primary" target="_blank" rel="noopener">Написать в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-logo">Дарьяна.</div>
+      <div class="footer-links">
+        <a href="https://t.me/Dariana_lem" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>Самозанятая Лемешевская Дарья Геннадьевна</p>
+      <p>УНП: KA9792041 · Плательщик налога на профессиональный доход</p>
+      <p><a href="mailto:dariana141@gmail.com">dariana141@gmail.com</a></p>
+    </div>
+    <div class="footer-copyright" data-i18n="footer.copy">© 2026 Дарьяна · Все права защищены. Материалы сайта защищены авторским правом.</div>
+  </div>
+</footer>
+
+<!-- COOKIE CONSENT -->
+<div class="cookie-banner" id="cookieBanner">
+  <p data-i18n="cookie.text">Мы используем аналитические файлы cookie (Яндекс.Метрика, Google Analytics), чтобы улучшать сайт.</p>
+  <button class="btn-outline cookie-accept" id="cookieAccept" data-i18n="cookie.accept">Понятно</button>
+</div>
+
+<script src="../assets/js/translations.js"></script>
+<script src="../assets/js/blog-data.js"></script>
+<script src="../assets/js/blog.js"></script>
+<script src="../assets/js/cookie-consent.js"></script>
+</body>
+</html>

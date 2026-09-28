@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Как создать ИИ-агента для бизнеса: пошаговый разбор | Блог Дарьяны</title>
+  <meta name="description" content="ИИ-агент для бизнеса создаётся в 6 этапов: цель и сценарий, выбор LLM, логика и function calling, интеграции, тестирование, запуск. Разбор без воды.">
+  <meta name="author" content="Дарьяна">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://darilem.github.io/portfolio/blog/kak-sozdat-ii-agenta-dlya-biznesa.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://darilem.github.io/portfolio/blog/kak-sozdat-ii-agenta-dlya-biznesa.html">
+  <meta property="og:title" content="Как создать ИИ-агента для бизнеса: пошаговый разбор">
+  <meta property="og:description" content="ИИ-агент для бизнеса создаётся в 6 этапов: цель и сценарий, выбор LLM, логика и function calling, интеграции, тестирование, запуск. Разбор без воды.">
+  <meta property="og:image" content="https://darilem.github.io/portfolio/assets/images/photo.jpg">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://darilem.github.io/portfolio/blog/kak-sozdat-ii-agenta-dlya-biznesa.html">
+  <meta name="twitter:title" content="Как создать ИИ-агента для бизнеса: пошаговый разбор">
+  <meta name="twitter:description" content="ИИ-агент для бизнеса создаётся в 6 этапов: цель и сценарий, выбор LLM, логика и function calling, интеграции, тестирование, запуск. Разбор без воды.">
+  <meta name="twitter:image" content="https://darilem.github.io/portfolio/assets/images/photo.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Как создать ИИ-агента для бизнеса: пошаговый разбор",
+    "description": "ИИ-агент для бизнеса создаётся в 6 этапов: цель и сценарий, выбор LLM, логика и function calling, интеграции, тестирование, запуск. Разбор без воды.",
+    "image": "https://darilem.github.io/portfolio/assets/images/photo.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Дарьяна",
+      "url": "https://darilem.github.io/portfolio/"
+    },
+    "datePublished": "2026-09-28",
+    "dateModified": "2026-09-28",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://darilem.github.io/portfolio/blog/kak-sozdat-ii-agenta-dlya-biznesa.html"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="../index.html" class="nav-logo">
+      <div class="nav-logo-icon">D</div>
+      Дарьяна<span class="dot">.</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html#about" data-i18n="nav.about">О себе</a>
+      <a href="../index.html#services" data-i18n="nav.services">Услуги</a>
+      <a href="../index.html#projects" data-i18n="nav.projects">Кейсы</a>
+      <a href="../index.html#steps" data-i18n="nav.steps">Этапы</a>
+      <a href="../index.html#certs" data-i18n="nav.certs">Сертификаты</a>
+      <a href="index.html" data-i18n="nav.blog">Блог</a>
+      <a href="../index.html#contact" data-i18n="nav.contact">Контакт</a>
+    </div>
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle">EN</button>
+      <a href="https://t.me/Dariana_lem" class="btn-primary nav-cta" target="_blank" rel="noopener" data-i18n="hero.cta1">Написать</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="nav-mobile-menu" id="navMobileMenu">
+  <a href="../index.html#about" data-i18n="nav.about">О себе</a>
+  <a href="../index.html#services" data-i18n="nav.services">Услуги</a>
+  <a href="../index.html#projects" data-i18n="nav.projects">Кейсы</a>
+  <a href="../index.html#steps" data-i18n="nav.steps">Этапы</a>
+  <a href="../index.html#certs" data-i18n="nav.certs">Сертификаты</a>
+  <a href="index.html" data-i18n="nav.blog">Блог</a>
+  <a href="../index.html#contact" data-i18n="nav.contact">Контакт</a>
+  <div class="nav-mobile-actions">
+    <button class="lang-toggle-mobile" id="langToggleMobile" style="color: #94A3B8; font-weight: 600; padding: 10px;">EN</button>
+    <a href="https://t.me/Dariana_lem" class="btn-primary" style="width: 100%;" data-i18n="hero.cta1">Написать</a>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="blog-article">
+      <a href="index.html" class="section-label animate-on-scroll" style="display:inline-block; margin-bottom: 24px;">← Все статьи блога</a>
+      <h1 class="animate-on-scroll">Как создать ИИ-агента для бизнеса: пошаговый разбор</h1>
+
+      <p class="animate-on-scroll">ИИ-агент для бизнеса создаётся в шесть этапов: сначала определяют сценарий и цель (какую задачу он решает — продажи, поддержку, обработку заявок), затем выбирают языковую модель и инструменты, проектируют логику принятия решений и вызов внешних функций, интегрируют агента с CRM, мессенджерами и базой знаний компании, тестируют на реальных диалогах и, наконец, запускают с последующей доработкой по метрикам.</p>
+
+      <p class="animate-on-scroll">Если пару лет назад «ИИ-агент» звучал как что-то из области экспериментов, то сейчас это рабочий инструмент, который берёт на себя часть функций сотрудника: отвечает клиентам в чатах, квалифицирует заявки, ведёт первичную консультацию, назначает встречи, собирает данные для отчётов. Разница между «просто чат-ботом» и полноценным агентом — в том, что агент не просто генерирует текст, а действует: обращается к базе данных, вызывает функции, принимает решения по заданной логике и доводит диалог до результата.</p>
+
+      <h2 class="animate-on-scroll">С чего начинается разработка ИИ-агента</h2>
+      <p class="animate-on-scroll">Прежде чем говорить о технологиях, нужно ответить на один вопрос: какую конкретно задачу должен закрывать агент. «ИИ-агент для бизнеса» — это слишком общая формулировка, чтобы с ней можно было что-то сделать. Один разговор с клиентом в Telegram — это не то же самое, что обработка заявки с сайта, которая должна попасть в CRM, получить статус и уйти нужному менеджеру.</p>
+      <p class="animate-on-scroll">На старте важно зафиксировать: с кем агент общается (входящие лиды, текущие клиенты, сотрудники), в каком канале (сайт, WhatsApp, Telegram, звонки), что он должен уметь решить сам, а что — передать человеку, и какой результат считается успехом — оплата, запись, закрытая заявка, довольный клиент. Без этой рамки любая разработка превращается в бесконечную доработку «ещё одной функции», потому что цель не была определена заранее.</p>
+      <p class="animate-on-scroll">Здесь же прорабатывается база знаний: документы, скрипты продаж, FAQ, регламенты — всё, на основании чего агент должен отвечать. Слабое место большинства неудачных внедрений — попытка запустить агента без структурированной базы знаний, из-за чего он либо выдумывает ответы, либо зацикливается на «уточните у менеджера».</p>
+      <p class="animate-on-scroll">Стоит сразу отделить два разных класса задач. Один — это агент как виртуальный консультант, который ведёт диалог с человеком: отвечает на вопросы, продаёт, обучает, снимает часть нагрузки с отдела продаж или поддержки. Другой — это агент, встроенный в бизнес-процесс: он не столько общается, сколько выполняет цепочку действий — принимает заявку, проверяет данные, формирует документ, обновляет статус в системе. На практике зрелые внедрения часто сочетают оба класса: диалоговая часть отвечает клиенту, а фоновая логика параллельно двигает заявку по процессу. Понимание того, какой класс задач решается в первую очередь, напрямую влияет на выбор модели, инструментов и архитектуры на следующих этапах.</p>
+
+      <h2 class="animate-on-scroll">No-code платформа или разработка под себя — что выбрать</h2>
+      <p class="animate-on-scroll">Когда сценарий и цель ясны, встаёт развилка: собрать агента на готовой no-code платформе для создания ИИ-агентов или заказать разработку под конкретный процесс. У обоих путей есть своя логика, и честно сравнить их важнее, чем продавать один вариант как единственно верный.</p>
+      <p class="animate-on-scroll"><strong>No-code платформа</strong> хороша, когда сценарий простой и типовой: ответы на частые вопросы, базовая консультация, сбор контактов. Такую платформу можно запустить быстро, не привлекая разработчика, и она подойдёт, если у бизнеса нет сложных интеграций и нестандартной логики. Минусы проявляются, когда сценарий усложняется: платформа ограничивает логику готовыми блоками, сложно встроить нестандартную интеграцию с внутренней системой, а стоимость подписки растёт вместе с объёмом диалогов — при этом агент остаётся «чужим» продуктом, поведение которого не всегда можно донастроить до нужного уровня.</p>
+      <p class="animate-on-scroll"><strong>Разработка под себя</strong> требует больше времени на старте и вовлечённости в проектирование, зато даёт агента, который завязан именно на процессы конкретной компании: свою CRM, свою логику квалификации лида, свою базу знаний, свои правила эскалации на человека. Такой агент масштабируется вместе с бизнесом, а не упирается в возможности конструктора. Для разовой узкой задачи это может быть избыточно — но если агент должен стать полноценным нейро-сотрудником, обрабатывающим реальный поток обращений и завязанным на несколько систем, кастомная разработка почти всегда окупает себя точностью и гибкостью.</p>
+      <p class="animate-on-scroll">Практический ориентир: чем больше у сценария развилок, интеграций и исключений — тем меньше смысла упаковывать его в готовый конструктор.</p>
+
+      <h2 class="animate-on-scroll">Из каких этапов состоит разработка</h2>
+      <p class="animate-on-scroll">Когда выбор сделан в пользу разработки под задачу, процесс обычно проходит через следующие этапы.</p>
+      <p class="animate-on-scroll"><strong>1. Определение сценария и целей.</strong> Формулируется, что именно должен делать агент, какие данные ему нужны и какой результат он должен приносить бизнесу.</p>
+      <p class="animate-on-scroll"><strong>2. Выбор LLM, API и инструментов.</strong> Подбирается языковая модель под задачу (баланс качества ответов, скорости и стоимости токенов), а также набор инструментов, которые агент сможет вызывать — от простого поиска по базе знаний до сложных внешних API.</p>
+      <p class="animate-on-scroll"><strong>3. Проектирование логики и function calling.</strong> Прописывается, как агент принимает решения: в какой момент задать уточняющий вопрос, когда обратиться к внешней функции (проверить остаток товара, создать сделку, отправить документ), а когда передать диалог живому менеджеру.</p>
+      <p class="animate-on-scroll"><strong>4. Интеграция с CRM, мессенджерами и базой знаний.</strong> Агент подключается к реальным каналам связи и системам компании, чтобы данные не терялись и не требовали ручного переноса — заявка сразу попадает в CRM, диалог сохраняется в истории клиента, ответы опираются на актуальную базу знаний.</p>
+      <p class="animate-on-scroll"><strong>5. Тестирование на реальных диалогах.</strong> Агента прогоняют через живые сценарии и нестандартные вопросы, смотрят, где он ошибается, зацикливается или отвечает не по делу, и дорабатывают логику и промпты.</p>
+      <p class="animate-on-scroll"><strong>6. Запуск и доработка по метрикам.</strong> После запуска отслеживается, как агент справляется на реальном потоке обращений: конверсия в целевое действие, доля диалогов, ушедших на человека, типичные точки провала — и логика донастраивается на основе этих данных.</p>
+
+      <h2 class="animate-on-scroll">Сколько это стоит и от чего зависит цена</h2>
+      <p class="animate-on-scroll">Единого тарифа на «ИИ-агента для бизнеса» не существует, и любая фиксированная цифра без деталей проекта — либо очень грубая оценка, либо маркетинговый ход. Стоимость складывается из нескольких факторов.</p>
+      <p class="animate-on-scroll">Во-первых, сложность сценариев: агент с одной веткой диалога стоит иначе, чем агент, который квалифицирует лида, проверяет данные в нескольких системах и ведёт клиента через несколько этапов воронки. Во-вторых, количество и сложность интеграций — подключение к одной CRM через готовый API это одно, а синхронизация с несколькими внутренними системами и мессенджерами — другое. В-третьих, объём диалогов и нагрузка: чем больше обращений обрабатывает агент, тем больше приходится думать о стоимости токенов, стабильности и мониторинге. В-четвёртых, глубина базы знаний, которую нужно структурировать и подключить, и требования к тестированию перед запуском.</p>
+      <p class="animate-on-scroll">Стоимость разработки ИИ-агента я рассчитываю индивидуально под задачи конкретного проекта — исходя из сценария, интеграций и ожидаемой нагрузки, а не по прайс-листу с фиксированными пакетами.</p>
+
+      <p class="animate-on-scroll">Если вы дочитали до этого места, скорее всего вопрос «нужен ли агент бизнесу» уже не стоит — остаётся вопрос, каким он должен быть именно в вашем случае. Я сертифицированный преподаватель и амбассадор ProTalk, за 5 лет реализовала около 100 проектов по нейро-сотрудникам и автоматизации для бизнесов из СНГ, Дубая и Испании, и готова разобрать ваш сценарий предметно.</p>
+    </div>
+    <div class="blog-post-cta animate-on-scroll">
+      <p>Хотите обсудить ИИ-агента под свой бизнес?</p>
+      <a href="https://t.me/Dariana_lem" class="btn-primary" target="_blank" rel="noopener">Написать в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-logo">Дарьяна.</div>
+      <div class="footer-links">
+        <a href="https://t.me/Dariana_lem" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>Самозанятая Лемешевская Дарья Геннадьевна</p>
+      <p>УНП: KA9792041 · Плательщик налога на профессиональный доход</p>
+      <p><a href="mailto:dariana141@gmail.com">dariana141@gmail.com</a></p>
+    </div>
+    <div class="footer-copyright" data-i18n="footer.copy">© 2026 Дарьяна · Все права защищены. Материалы сайта защищены авторским правом.</div>
+  </div>
+</footer>
+
+<!-- COOKIE CONSENT -->
+<div class="cookie-banner" id="cookieBanner">
+  <p data-i18n="cookie.text">Мы используем аналитические файлы cookie (Яндекс.Метрика, Google Analytics), чтобы улучшать сайт.</p>
+  <button class="btn-outline cookie-accept" id="cookieAccept" data-i18n="cookie.accept">Понятно</button>
+</div>
+
+<script src="../assets/js/translations.js"></script>
+<script src="../assets/js/blog-data.js"></script>
+<script src="../assets/js/blog.js"></script>
+<script src="../assets/js/cookie-consent.js"></script>
+</body>
+</html>
