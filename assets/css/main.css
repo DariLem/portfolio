@@ -1527,6 +1527,15 @@ button {
   gap: 32px;
 }
 
+.speaking-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.speaking-grid .cert-img-placeholder {
+  height: 320px;
+}
+
 .cert-card {
   display: flex;
   flex-direction: column;

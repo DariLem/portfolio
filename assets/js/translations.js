@@ -14,6 +14,7 @@ window.TRANSLATIONS = {
     "nav.projects": "Кейсы",
     "nav.steps": "Этапы",
     "nav.certs": "Сертификаты",
+    "nav.speaking": "Выступления",
     "nav.blog": "Блог",
     "nav.contact": "Контакт",
 
@@ -108,6 +109,19 @@ window.TRANSLATIONS = {
     "step6.title": "Техническая поддержка 2 недели",
     "step6.desc": "Сопровождаем после запуска — отвечаем на вопросы и фиксим баги",
 
+    "speaking.label": "Экспертиза",
+    "speaking.title": "Выступления и консультации",
+    "speaking.c0.org": "Школа нейросетей Ксении Барановой",
+    "speaking.c0.title": "Zoom-консультация «GPT-агенты и AI-боты»",
+    "speaking.c0.meta": "Живой эфир для участников программы · чат на 240 человек · отзывы о практических фишках",
+    "speaking.desc": "Делюсь практикой внедрения нейросетей и автоматизации с предпринимателями: от идеи до работающего нейро-сотрудника.",
+    "speaking.c1.org": "Академия нейросетей · НКО Терра",
+    "speaking.c1.title": "Онлайн-выступление «Автоматизация с Protalk»",
+    "speaking.c1.meta": "Июль 2026 · Zoom, 69 участников · бесплатное обучение предпринимателей",
+    "speaking.c2.org": "Амбассадор Protalk",
+    "speaking.c2.title": "Приглашение от директора Академии нейросетей",
+    "speaking.c2.meta": "Июнь 2026 · выступление с новостями и кейсами Protalk",
+
     "certs.label": "Квалификация",
     "certs.title": "Сертификаты",
 
@@ -168,6 +182,7 @@ window.TRANSLATIONS = {
     "nav.projects": "Cases",
     "nav.steps": "Process",
     "nav.certs": "Certificates",
+    "nav.speaking": "Talks",
     "nav.blog": "Blog",
     "nav.contact": "Contact",
 
@@ -250,6 +265,19 @@ window.TRANSLATIONS = {
 
     "step6.title": "2 weeks technical support",
     "step6.desc": "We stay with you after launch — answering questions and fixing bugs",
+
+    "speaking.label": "Expertise",
+    "speaking.title": "Talks & Consulting",
+    "speaking.c0.org": "Ksenia Baranova’s Neural Networks School",
+    "speaking.c0.title": "Zoom consultation “GPT agents and AI bots”",
+    "speaking.c0.meta": "Live session for programme participants · 240-member chat · feedback on practical tips",
+    "speaking.desc": "I share hands-on experience with AI and automation for entrepreneurs: from an idea to a working AI employee.",
+    "speaking.c1.org": "Neural Networks Academy · Terra NGO",
+    "speaking.c1.title": "Online talk “Automation with Protalk”",
+    "speaking.c1.meta": "July 2026 · Zoom, 69 attendees · free education for entrepreneurs",
+    "speaking.c2.org": "Protalk Ambassador",
+    "speaking.c2.title": "Invitation from the Academy director",
+    "speaking.c2.meta": "June 2026 · talk with Protalk news and cases",
 
     "certs.label": "Qualifications",
     "certs.title": "Certificates",
