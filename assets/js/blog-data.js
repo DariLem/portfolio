@@ -3,9 +3,9 @@ window.BLOG_POSTS = [
   {
     slug: "skolko-stoit-vnedrenie-ii-v-kompaniyu-v-2026-godu-iz-chego-skladyvaetsya",
     title: "Сколько стоит внедрение ИИ в компанию в 2026 году: из чего складывается бюджет",
-    titleEn: "Сколько стоит внедрение ИИ в компанию в 2026 году: из чего складывается бюджет",
+    titleEn: "AI Implementation Costs in 2026: Budget Breakdown and Hidden Expenses",
     description: "Сколько стоит внедрение ИИ в компанию в 2026 году: из чего складывается бюджет, где скрыты лишние траты и как запустить ИИ без слива денег.",
-    descriptionEn: "Сколько стоит внедрение ИИ в компанию в 2026 году: из чего складывается бюджет, где скрыты лишние траты и как запустить ИИ без слива денег.",
+    descriptionEn: "AI implementation budget breakdown for 2026: cost components, hidden expenses, and how to launch AI efficiently without overspending.",
     date: "2026-10-05",
     url: "skolko-stoit-vnedrenie-ii-v-kompaniyu-v-2026-godu-iz-chego-skladyvaetsya.html"
   },
