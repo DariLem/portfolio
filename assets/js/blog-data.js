@@ -1,6 +1,15 @@
 /* Each entry: {slug, title, titleEn, description, descriptionEn, date, url} */
 window.BLOG_POSTS = [
   {
+    slug: "skolko-stoit-vnedrenie-ii-v-kompaniyu-v-2026-godu-iz-chego-skladyvaetsya",
+    title: "Сколько стоит внедрение ИИ в компанию в 2026 году: из чего складывается бюджет",
+    titleEn: "Сколько стоит внедрение ИИ в компанию в 2026 году: из чего складывается бюджет",
+    description: "Сколько стоит внедрение ИИ в компанию в 2026 году: из чего складывается бюджет, где скрыты лишние траты и как запустить ИИ без слива денег.",
+    descriptionEn: "Сколько стоит внедрение ИИ в компанию в 2026 году: из чего складывается бюджет, где скрыты лишние траты и как запустить ИИ без слива денег.",
+    date: "2026-10-05",
+    url: "skolko-stoit-vnedrenie-ii-v-kompaniyu-v-2026-godu-iz-chego-skladyvaetsya.html"
+  },
+  {
     slug: 'chto-takoe-ii-agent',
     title: 'Что такое ИИ-агент и чем он отличается от чат-бота',
     titleEn: 'What Is an AI Agent and How Is It Different From a Chatbot',

@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://darilem.github.io/portfolio/blog/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -57,6 +57,12 @@
   <url>
     <loc>https://darilem.github.io/portfolio/blog/chat-bot-dlya-biznesa.html</loc>
     <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://darilem.github.io/portfolio/blog/skolko-stoit-vnedrenie-ii-v-kompaniyu-v-2026-godu-iz-chego-skladyvaetsya.html</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
