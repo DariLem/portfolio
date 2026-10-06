@@ -1,6 +1,15 @@
 /* Each entry: {slug, title, titleEn, description, descriptionEn, date, url} */
 window.BLOG_POSTS = [
   {
+    slug: "kompanii-po-avtomatizatsii-biznes-protsessov-kak-vybrat-podryadchika-v-2026",
+    title: "Компании по автоматизации бизнес процессов: как выбрать подрядчика в 2026 году и не слить бюджет",
+    titleEn: "Business Process Automation Companies: How to Choose a Contractor in 2026",
+    description: "Как выбрать компанию по автоматизации бизнес процессов в 2026 году: типы подрядчиков, критерии, красные флаги, этапы работы и вопросы перед стартом.",
+    descriptionEn: "How to choose a business process automation company in 2026: contractor types, selection criteria, red flags, workflow stages and questions to ask first.",
+    date: "2026-10-06",
+    url: "kompanii-po-avtomatizatsii-biznes-protsessov-kak-vybrat-podryadchika-v-2026.html"
+  },
+  {
     slug: "skolko-stoit-vnedrenie-ii-v-kompaniyu-v-2026-godu-iz-chego-skladyvaetsya",
     title: "Сколько стоит внедрение ИИ в компанию в 2026 году: из чего складывается бюджет",
     titleEn: "AI Implementation Costs in 2026: Budget Breakdown and Hidden Expenses",
