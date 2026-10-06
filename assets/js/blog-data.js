@@ -1,6 +1,15 @@
 /* Each entry: {slug, title, titleEn, description, descriptionEn, date, url} */
 window.BLOG_POSTS = [
   {
+    slug: "neyroseti-dlya-biznesa-v-2026-godu-s-chego-nachat-i-kak-ne-potratit-dengi",
+    title: "Нейросети для бизнеса в 2026 году: с чего начать и как не потратить деньги впустую",
+    titleEn: "AI for Business in 2026: Where to Start and How to Avoid Wasting Your Budget",
+    description: "Нейросети для бизнеса в 2026 году: где ИИ приносит пользу, как выбрать задачу, внедрить нейро-сотрудника и проверить сервис до запуска.",
+    descriptionEn: "AI for business in 2026: which tasks to automate first, how to launch an AI employee or chatbot, and how to test the solution before going live.",
+    date: "2026-10-06",
+    url: "neyroseti-dlya-biznesa-v-2026-godu-s-chego-nachat-i-kak-ne-potratit-dengi.html"
+  },
+  {
     slug: "kompanii-po-avtomatizatsii-biznes-protsessov-kak-vybrat-podryadchika-v-2026",
     title: "Компании по автоматизации бизнес процессов: как выбрать подрядчика в 2026 году и не слить бюджет",
     titleEn: "Business Process Automation Companies: How to Choose a Contractor in 2026",
