@@ -1,6 +1,15 @@
 /* Each entry: {slug, title, titleEn, description, descriptionEn, date, url} */
 window.BLOG_POSTS = [
   {
+    slug: "chat-bot-dlya-podbora-kak-on-pomogaet-prodavat-i-chto-nuzhno-uchest-pri-zapuske",
+    title: "Чат-бот для подбора: как он помогает продавать и что нужно учесть при запуске в 2026 году",
+    titleEn: "A Product Selection Chatbot: How It Helps Sell and What to Consider Before Launch in 2026",
+    description: "Чат бот для подбора помогает клиенту выбрать товар или услугу и передаёт заявку менеджеру. Как устроен, где работает и как запустить без потерь.",
+    descriptionEn: "A product selection chatbot guides customers to the right choice and hands leads to managers. How it works, where to run it and how to launch it safely.",
+    date: "2026-10-07",
+    url: "chat-bot-dlya-podbora-kak-on-pomogaet-prodavat-i-chto-nuzhno-uchest-pri-zapuske.html"
+  },
+  {
     slug: "telegram-bot-dlya-zapisi-klientov-kak-vybrat-nastroit-i-ne-poteryat-zayavki-v",
     title: "Телеграм бот для записи клиентов: как выбрать, настроить и не потерять заявки в 2026 году",
     titleEn: "Telegram Booking Bot for Clients: How to Choose, Set Up and Test It in 2026",
