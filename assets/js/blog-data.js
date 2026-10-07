@@ -1,6 +1,15 @@
 /* Each entry: {slug, title, titleEn, description, descriptionEn, date, url} */
 window.BLOG_POSTS = [
   {
+    slug: "telegram-bot-dlya-zapisi-klientov-kak-vybrat-nastroit-i-ne-poteryat-zayavki-v",
+    title: "Телеграм бот для записи клиентов: как выбрать, настроить и не потерять заявки в 2026 году",
+    titleEn: "Telegram Booking Bot for Clients: How to Choose, Set Up and Test It in 2026",
+    description: "Телеграм бот для записи клиентов: что он умеет, как устроен, как запустить без лишних трат и проверить до выхода к людям. Практический гайд 2026.",
+    descriptionEn: "How a Telegram bot for booking clients works, what it can do, how to connect it to your CRM and test it before launch. A practical 2026 guide.",
+    date: "2026-10-07",
+    url: "telegram-bot-dlya-zapisi-klientov-kak-vybrat-nastroit-i-ne-poteryat-zayavki-v.html"
+  },
+  {
     slug: "neyroseti-dlya-biznesa-v-2026-godu-s-chego-nachat-i-kak-ne-potratit-dengi",
     title: "Нейросети для бизнеса в 2026 году: с чего начать и как не потратить деньги впустую",
     titleEn: "AI for Business in 2026: Where to Start and How to Avoid Wasting Your Budget",

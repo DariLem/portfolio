@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://darilem.github.io/portfolio/blog/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -75,6 +75,12 @@
   <url>
     <loc>https://darilem.github.io/portfolio/blog/neyroseti-dlya-biznesa-v-2026-godu-s-chego-nachat-i-kak-ne-potratit-dengi.html</loc>
     <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://darilem.github.io/portfolio/blog/telegram-bot-dlya-zapisi-klientov-kak-vybrat-nastroit-i-ne-poteryat-zayavki-v.html</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
