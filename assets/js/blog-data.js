@@ -1,6 +1,15 @@
 /* Each entry: {slug, title, titleEn, description, descriptionEn, date, url} */
 window.BLOG_POSTS = [
   {
+    slug: "neyroset-dlya-sozdaniya-kommercheskikh-predlozheniy-kak-vnedrit-ii-v-prodazhi-v",
+    title: "Нейросеть для создания коммерческих предложений: как внедрить ИИ в продажи в 2026 году",
+    titleEn: "AI for Creating Commercial Proposals: How to Bring Neural Networks into Sales in 2026",
+    description: "Нейросеть для создания коммерческих предложений: что она умеет, как внедрить её в продажи, где ошибаются и как проверить результат до отправки клиенту.",
+    descriptionEn: "How an AI tool for commercial proposals works, how to integrate it with your CRM and email, and how to test the results before they reach clients.",
+    date: "2026-10-07",
+    url: "neyroset-dlya-sozdaniya-kommercheskikh-predlozheniy-kak-vnedrit-ii-v-prodazhi-v.html"
+  },
+  {
     slug: "chat-bot-dlya-podbora-kak-on-pomogaet-prodavat-i-chto-nuzhno-uchest-pri-zapuske",
     title: "Чат-бот для подбора: как он помогает продавать и что нужно учесть при запуске в 2026 году",
     titleEn: "A Product Selection Chatbot: How It Helps Sell and What to Consider Before Launch in 2026",
