@@ -1,6 +1,15 @@
 /* Each entry: {slug, title, titleEn, description, descriptionEn, date, url} */
 window.BLOG_POSTS = [
   {
+    slug: "ii-assistent-rukovoditelya-v-2026-godu-chto-on-umeet-i-kak-vnedrit-ego-v-biznes",
+    title: "ИИ-ассистент руководителя в 2026 году: что он умеет и как внедрить его в бизнес без лишних трат",
+    titleEn: "AI Assistant for Executives in 2026: What It Can Do and How to Implement It Without Wasting Budget",
+    description: "ИИ ассистент руководителя: какие задачи он берёт на себя, как выбрать сценарий, внедрить в 2026 году и проверить результат до запуска в работу.",
+    descriptionEn: "An AI assistant for executives: which tasks it handles, how to choose a first use case, connect it to your CRM and test it before launch in 2026.",
+    date: "2026-10-08",
+    url: "ii-assistent-rukovoditelya-v-2026-godu-chto-on-umeet-i-kak-vnedrit-ego-v-biznes.html"
+  },
+  {
     slug: "neyroseti-dlya-biznesa-obuchenie-komandy-v-2026-godu-bez-poteryannykh-deneg",
     title: "Нейросети для бизнеса: обучение команды в 2026 году без потерянных денег",
     titleEn: "AI Training for Business in 2026: How to Teach Your Team and Avoid Wasting Budget",

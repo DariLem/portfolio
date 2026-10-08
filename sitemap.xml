@@ -108,4 +108,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://darilem.github.io/portfolio/blog/ii-assistent-rukovoditelya-v-2026-godu-chto-on-umeet-i-kak-vnedrit-ego-v-biznes.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
