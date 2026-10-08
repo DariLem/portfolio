@@ -1,6 +1,15 @@
 /* Each entry: {slug, title, titleEn, description, descriptionEn, date, url} */
 window.BLOG_POSTS = [
   {
+    slug: "golosovoy-robot-dlya-zvonkov-v-2026-godu-kak-rabotaet-skolko-stoit-vnedrenie-i",
+    title: "Голосовой робот для звонков в 2026 году: как работает, сколько стоит внедрение и когда он окупается",
+    titleEn: "Voice Robot for Calls in 2026: How It Works, Where It Pays Off and How to Launch It Safely",
+    description: "Голосовой робот для звонков: как он работает, где полезен бизнесу, как выбрать и запустить без потерь. Практический гид 2026 года для владельцев и маркетологов.",
+    descriptionEn: "Voice robot for calls: how it works, which business tasks it handles, how to choose a solution and test it before launch. A practical 2026 guide for SMBs.",
+    date: "2026-10-08",
+    url: "golosovoy-robot-dlya-zvonkov-v-2026-godu-kak-rabotaet-skolko-stoit-vnedrenie-i.html"
+  },
+  {
     slug: "neyroset-dlya-sozdaniya-kommercheskikh-predlozheniy-kak-vnedrit-ii-v-prodazhi-v",
     title: "Нейросеть для создания коммерческих предложений: как внедрить ИИ в продажи в 2026 году",
     titleEn: "AI for Creating Commercial Proposals: How to Bring Neural Networks into Sales in 2026",

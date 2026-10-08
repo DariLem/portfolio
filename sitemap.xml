@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://darilem.github.io/portfolio/blog/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -93,6 +93,12 @@
   <url>
     <loc>https://darilem.github.io/portfolio/blog/neyroset-dlya-sozdaniya-kommercheskikh-predlozheniy-kak-vnedrit-ii-v-prodazhi-v.html</loc>
     <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://darilem.github.io/portfolio/blog/golosovoy-robot-dlya-zvonkov-v-2026-godu-kak-rabotaet-skolko-stoit-vnedrenie-i.html</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
