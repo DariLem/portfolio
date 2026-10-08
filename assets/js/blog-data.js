@@ -1,6 +1,15 @@
 /* Each entry: {slug, title, titleEn, description, descriptionEn, date, url} */
 window.BLOG_POSTS = [
   {
+    slug: "kak-vnedrit-ii-v-otdel-prodazh-poshagovyy-plan-dlya-malogo-i-srednego-biznesa-v",
+    title: "Как внедрить ИИ в отдел продаж: пошаговый план для малого и среднего бизнеса в 2026",
+    titleEn: "How to Implement AI in a Sales Department: A Step-by-Step Plan for SMBs in 2026",
+    description: "Разбираем, как внедрить ИИ в отдел продаж: аудит, сценарии, CRM, пилот, контроль качества и безопасное масштабирование.",
+    descriptionEn: "Learn how to implement AI in a sales department: map processes, choose use cases, prepare CRM data, run a pilot, and scale safely.",
+    date: "2026-10-08",
+    url: "kak-vnedrit-ii-v-otdel-prodazh-poshagovyy-plan-dlya-malogo-i-srednego-biznesa-v.html"
+  },
+  {
     slug: "ii-assistent-rukovoditelya-v-2026-godu-chto-on-umeet-i-kak-vnedrit-ego-v-biznes",
     title: "ИИ-ассистент руководителя в 2026 году: что он умеет и как внедрить его в бизнес без лишних трат",
     titleEn: "AI Assistant for Executives in 2026: What It Can Do and How to Implement It Without Wasting Budget",
