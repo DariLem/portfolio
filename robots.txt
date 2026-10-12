@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://darilem.github.io/portfolio/sitemap.xml
+Sitemap: https://darilem.com/sitemap.xml
