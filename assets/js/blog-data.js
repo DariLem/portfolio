@@ -130,8 +130,8 @@ window.BLOG_POSTS = [
     slug: 'obuchenie-ii-agentam',
     title: 'Обучение работе с ИИ-агентами: с чего начать бизнесу',
     titleEn: 'Learning to Build AI Agents: Where Should a Business Start',
-    description: 'Обучение созданию ИИ-агентов начинается не с программирования, а с понимания сценария диалога и одной no-code платформы. Как устроено моё обучение в ProTalk.',
-    descriptionEn: 'Learning to build AI agents starts not with coding but with dialogue-scenario design and one no-code platform, plus how my ProTalk training works.',
+    description: 'Обучение созданию ИИ-агентов начинается не с программирования, а с понимания сценария диалога и одной no-code платформы. Как проходят мои консультации по ProTalk.',
+    descriptionEn: 'Learning to build AI agents starts not with coding but with dialogue-scenario design and one no-code platform, plus how my ProTalk consultations work.',
     date: '2026-09-28',
     url: 'obuchenie-ii-agentam.html'
   },

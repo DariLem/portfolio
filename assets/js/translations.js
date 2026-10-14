@@ -30,7 +30,7 @@ window.TRANSLATIONS = {
     "about.p3": "Среди клиентов — компании из Дубая, медицинский центр в Испании и десятки бизнесов из СНГ. Официальный амбассадор ProTalk, спикер Академии нейросетей НКО Терра и консультант Школы нейросетей Ксении Барановой.",
     "about.quote": "ИИ не заменяет человека — он даёт бизнесу инструмент для роста качества и выхода прибыли на новый уровень",
     "about.tools": "Инструменты",
-    "about.teaching": "Принимаю учеников на индивидуальное обучение по работе в ProTalk",
+    "about.teaching": "Принимаю желающих на индивидуальные консультации по работе в ProTalk",
     "about.geo": "Международные проекты: Дубай, Испания, СНГ",
 
     "services.label": "Услуги",
@@ -53,8 +53,8 @@ window.TRANSLATIONS = {
     "s5.title": "Веб и мобильные приложения",
     "s5.desc": "Создаю полноценные веб и мобильные приложения с встроенными AI-функциями",
 
-    "s6.title": "Индивидуальное обучение",
-    "s6.desc": "Обучаю работе в ProTalk и созданию нейро-сотрудников. Официальный преподаватель сервиса",
+    "s6.title": "Индивидуальные консультации",
+    "s6.desc": "Консультирую по работе в ProTalk и созданию нейро-сотрудников. Официальный амбассадор сервиса",
 
     "s7.title": "Настройка инструментов для РФ",
     "s7.desc": "Настраиваю AI-инструменты для российских компаний с обходом ограничений и блокировок",
@@ -201,7 +201,7 @@ window.TRANSLATIONS = {
     "about.p3": "My clients include companies from Dubai, a medical centre in Spain, and dozens of businesses across the CIS. I am an official ProTalk ambassador, a speaker at the Neural Networks Academy (Terra NGO) and a consultant at Ksenia Baranova’s Neural Networks School.",
     "about.quote": "AI does not replace people — it gives businesses the tool to elevate quality and take profitability to a new level",
     "about.tools": "Tools & stack",
-    "about.teaching": "Accepting students for individual ProTalk training",
+    "about.teaching": "Accepting individual consultations on working with ProTalk",
     "about.geo": "International projects: Dubai, Spain, CIS",
 
     "services.label": "Services",
@@ -224,8 +224,8 @@ window.TRANSLATIONS = {
     "s5.title": "Web & Mobile Applications",
     "s5.desc": "I build fully featured web and mobile applications with embedded AI capabilities",
 
-    "s6.title": "Individual Training",
-    "s6.desc": "I teach ProTalk and AI employee development. Official certified instructor",
+    "s6.title": "Individual Consultations",
+    "s6.desc": "I consult on working with ProTalk and building AI employees. Official service ambassador",
 
     "s7.title": "Setup for Russia",
     "s7.desc": "I configure AI tools for Russian companies with workarounds for blocks and restrictions",
