@@ -1,6 +1,15 @@
 /* Each entry: {slug, title, titleEn, description, descriptionEn, date, url} */
 window.BLOG_POSTS = [
   {
+    slug: "ii-agenty-chto-eto-takoe-i-kak-oni-rabotayut-v-biznese-v-2026-godu",
+    title: "ИИ агенты: что это такое и как они работают в бизнесе в 2026 году",
+    titleEn: "AI Agents: What They Are and How They Work for Business in 2026",
+    description: "ИИ агенты что это: простыми словами о принципе работы, отличиях от чат-ботов, примерах для бизнеса и о том, как внедрить их без лишних трат.",
+    descriptionEn: "What are AI agents? A plain-language guide to how they work, how they differ from chatbots, real business use cases and how to launch one safely.",
+    date: "2026-10-14",
+    url: "ii-agenty-chto-eto-takoe-i-kak-oni-rabotayut-v-biznese-v-2026-godu.html"
+  },
+  {
     slug: "avtomaticheskie-otvety-v-instagram-kak-nastroit-ikh-v-2026-godu-i-ne-poteryat",
     title: "Автоматические ответы в Инстаграм: как настроить их в 2026 году и не потерять клиентов",
     titleEn: "Instagram Auto-Replies in 2026: How to Set Them Up and Not Lose Customers",
