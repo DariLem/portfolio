@@ -1,6 +1,15 @@
 /* Each entry: {slug, title, titleEn, description, descriptionEn, date, url} */
 window.BLOG_POSTS = [
   {
+    slug: "avtomaticheskie-otvety-v-instagram-kak-nastroit-ikh-v-2026-godu-i-ne-poteryat",
+    title: "Автоматические ответы в Инстаграм: как настроить их в 2026 году и не потерять клиентов",
+    titleEn: "Instagram Auto-Replies in 2026: How to Set Them Up and Not Lose Customers",
+    description: "Автоматические ответы в инстаграм: какие бывают, как настроить, когда хватит встроенных функций, а когда нужен ИИ-бот. Советы для бизнеса в 2026 году.",
+    descriptionEn: "Instagram auto-replies for business: types, setup, when built-in tools are enough and when you need an AI bot. A practical guide for 2026.",
+    date: "2026-10-14",
+    url: "avtomaticheskie-otvety-v-instagram-kak-nastroit-ikh-v-2026-godu-i-ne-poteryat.html"
+  },
+  {
     slug: "kak-vnedrit-ii-v-otdel-prodazh-poshagovyy-plan-dlya-malogo-i-srednego-biznesa-v",
     title: "Как внедрить ИИ в отдел продаж: пошаговый план для малого и среднего бизнеса в 2026",
     titleEn: "How to Implement AI in a Sales Department: A Step-by-Step Plan for SMBs in 2026",
