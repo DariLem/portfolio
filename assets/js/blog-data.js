@@ -1,6 +1,15 @@
 /* Each entry: {slug, title, titleEn, description, descriptionEn, date, url} */
 window.BLOG_POSTS = [
   {
+    slug: "razrabotka-chat-botov-dlya-biznesa-v-2026-godu-s-chego-nachat-i-kak-ne-potratit",
+    title: "Разработка чат ботов для бизнеса в 2026 году: с чего начать и как не потратить деньги впустую",
+    titleEn: "Chatbot Development for Business in 2026: Where to Start and How Not to Waste Your Budget",
+    description: "Разработка чат ботов для бизнеса в 2026 году: как выбрать тип бота, каналы, интеграции, пройти этапы работы и проверить результат до запуска.",
+    descriptionEn: "Chatbot development for business in 2026: choosing the bot type, channels and integrations, project stages, and testing before launch.",
+    date: "2026-10-19",
+    url: "razrabotka-chat-botov-dlya-biznesa-v-2026-godu-s-chego-nachat-i-kak-ne-potratit.html"
+  },
+  {
     slug: "ii-agenty-chto-eto-takoe-i-kak-oni-rabotayut-v-biznese-v-2026-godu",
     title: "ИИ агенты: что это такое и как они работают в бизнесе в 2026 году",
     titleEn: "AI Agents: What They Are and How They Work for Business in 2026",
