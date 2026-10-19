@@ -113,12 +113,13 @@ window.PROJECTS = [
   },
   {
     id: 5,
-    name: "Нейро-сотрудник для мебельной фабрики Мебельрус",
-    nameEn: "Mebelrus Furniture Factory Consultant",
+    name: "Нейро-сотрудник Лена для мебельной фабрики",
+    nameEn: "Lena — AI Consultant for a Furniture Factory",
     role: "Консультант",
     integrations: ["WhatsApp", "Битрикс24", "Сайт", "Телеграм"],
     youtube: null,
-    description: "Консультирует покупателей по каталогу мебели, помогает с подбором и передаёт заявки менеджерам в Битрикс24."
+    description: "Нейро-сотрудник Лена — ИИ-консультант (чат-бот) для мебельной фабрики и её магазинов, который в WhatsApp, Telegram и на сайте отвечает на частые вопросы покупателей до и после покупки мебели и даёт точную информацию о товарах и услугах компании. Запрос клиента: создать нейро-сотрудника для ответов на часто задаваемые вопросы и консультирования клиентов до и после покупки. Что умеет Лена: рассказывает о продукции и каталоге товаров; консультирует по вопросам партнёрства и о самой фабрике; даёт ссылки на акции, адреса магазинов и гарантийные обязательства; присылает инструкцию по сборке мебели; сложные вопросы и оформление заказов передаёт оператору. Какие проблемы закрывает: клиент получает ответ сразу, без ожидания менеджера; снижается нагрузка на операторов — типовые вопросы больше не отнимают их время; растёт удовлетворённость клиентов благодаря оперативным консультациям; проще узнать всё о товарах и условиях покупки в одном диалоге. Польза для бизнеса: лучше клиентский сервис и выше лояльность покупателей к компании, а операторы занимаются заказами и сложными случаями, а не повторяющимися вопросами.",
+    descriptionEn: "Lena is an AI consultant (chatbot) for a furniture factory and its stores that answers customers' frequent questions on WhatsApp, Telegram and the website before and after a furniture purchase and gives accurate information about the company's products and services. The client's request: build an AI employee to answer FAQs and advise customers before and after they buy. What Lena does: presents the products and the catalog; answers questions about partnership and the factory itself; shares links to promotions, store addresses and warranty terms; sends furniture assembly instructions; hands complex questions and orders over to a human operator. Problems it solves: customers get an answer instantly instead of waiting for a manager; operator workload drops because routine questions no longer take their time; customer satisfaction grows thanks to fast consultations; everything about products and purchase terms is available in one conversation. Business benefit: better customer service and stronger customer loyalty, while operators focus on orders and complex cases instead of repetitive questions."
   },
   {
     id: 6,

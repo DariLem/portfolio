@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
 
+# ИИ-поиск и ИИ-ассистенты: доступ к сайту открыт явно
+User-agent: Googlebot
+User-agent: Google-Extended
+User-agent: Bingbot
+User-agent: YandexBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://darilem.com/sitemap.xml
